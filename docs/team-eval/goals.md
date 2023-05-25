@@ -4,7 +4,7 @@ parent: Team Evaluation
 nav_order: 1
 ---
 
-[Jane Dane]
+[Lasse Schmidt]
 {: .label }
 
 # [Goals achieved and missed]
