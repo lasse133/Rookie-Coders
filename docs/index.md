@@ -3,26 +3,27 @@ title: Home
 nav_order: 0
 ---
 
-# [Project Name]
-[Project description]
+# Rookie Coders
+Wir möchten eine Webanwendung zur Verwaltung von Aufgaben erstellen. Diese Anwendung soll Studierende dabei unterstützen, ihr bevorstehendes Auslandssemester strukturiert zu planen. Konkret ist die Kundin bzw. Zielperson eine Studentin der HWR Berlin, die sich in einem Bewerbungsprozess an einer Partnerhochschule in den USA (NYC) befindet. Es kam der Wunsch nach einer Anwendung auf, die ihre spezifischen Probleme adressiert und ihr die Abwicklung aller anstehenden Aufgaben signifikant erleichtert.
 
 ## Team members
 
-### [Jane Dane]
+### Isabel Kaspar
 
 About
-: Some info about Jane
+
+Isabel befindet sich im vierten Semester des Studiengangs Wirtschaftsinformatik an der HWR Berlin.
 
 Matr.-Nr.
-: 1234567
+1912676
 
-### [Joe Doe]
+### Lasse Schmidt
 
-About
-: Some info about Joe
+About :
+Lasse befindet sich im vierten Semester des Studiengangs Wirtschaftsinformatik an der HWR Berlin.
 
 Matr.-Nr.
-: 1234567
+1922909
 
 ## Eidesstattliche Erklärung
 
