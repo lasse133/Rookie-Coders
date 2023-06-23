@@ -1,38 +1,38 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return "<h1> HI </h1>"
+    return render_template("home.html")
 
-@views.infoPage('infoPage')
+@views.route('infoPage')
 def infoPage():
-    return "<h1> InfoPage </h1>"
+    return render_template("infoPage.html")
 
-@views.infoPage('ApplicationPart1')
+@views.route('ApplicationPart1')
 def ApplicationPart1():
-    return "<h1> ApplicationPart1 </h1>"
+    return render_template("applicationPartX.html")
 
-@views.infoPage('ApplicationPart2')
+@views.route('ApplicationPart2')
 def ApplicationPart2():
-    return "<h1> ApplicationPart2 </h1>"
+    return render_template("applicationPartX.html")
 
-@views.infoPage('SubTaskPersonalData')
+@views.route('SubTaskPersonalData')
 def SubTaskPersonalData():
-    return "<h1> SubTaskPersonalData </h1>"
+    return render_template("applicationPartX.html")
 
-@views.infoPage('SubTaskAcademicRessources')
+@views.route('SubTaskAcademicRessources')
 def SubTaskAcademicRessources():
-    return "<h1> SubTaskAcademicRessources </h1>"
+    return render_template("applicationPartX.html")
 
-@views.infoPage('SubTaskFinancialRessources')
+@views.route('SubTaskFinancialRessources')
 def SubTaskFinancialRessources():
-    return "<h1> SubTaskFinancialRessources </h1>"
+    return render_template("applicationPartX.html")
 
-@views.infoPage('SubTaskForeignInsurance')
+@views.route('SubTaskForeignInsurance')
 def SubTaskForeignInsurance():
-    return "<h1> SubTaskForeignInsurance </h1>"
+    return render_template("applicationPartX.html")
 
 
 
