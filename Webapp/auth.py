@@ -20,16 +20,7 @@ def login():
                 flash('Incorrect password. Please try again!', category='error')
         else:
             flash('User account does not exist. Please sign up first.', category='error')
-
-        if len(email) < 8:
-            flash('Email must be greater than 7 characters.', category='error')
-        elif '@' not in email:
-            flash('Invalid email', category='error') 
-        elif len(password) < 4:
-            flash('Password must be greater than 3 characters.', category='error')
-        else:
-            flash('You are logged in now!', category='success')
-            pass
+            
     return render_template("logInPage.html", text="Testing")
 
 @auth.route('/logout')
