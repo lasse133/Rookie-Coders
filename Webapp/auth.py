@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .models import User
-from werkzeug.security import check_password
+from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 
 
@@ -14,7 +14,7 @@ def login():
 
         user = User.query.filter_by(email=email).first()
         if user:
-            if check_password(user.password, password):
+            if check_password_hash(user.password, password):
                 flash('You are logged in now', category='success')
             else:
                 flash('Incorrect password. Please try again!', category='error')
@@ -55,7 +55,7 @@ def sign_up():
         elif len(password) < 4:
             flash('Password must be greater than 3 characters.', category='error')
         else:
-            new_user = User(name=name, email=email, password=password)
+            new_user = User(name=name, email=email, password=generate_password_hash(password, method='sha256'))
             db.session.add(new_user)
             db.session.commit()
             flash('You are signed up now!', category='success')
