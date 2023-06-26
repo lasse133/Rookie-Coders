@@ -1,0 +1,21 @@
+$(document).ready(function() {
+    $("form").submit(function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      var form = $(this);
+      var url = form.attr("action");
+  
+      $.ajax({
+        type: "POST",
+        url: url,
+        success: function(response) {
+          // Handle success response, such as removing the deleted note from the DOM
+          form.closest("li").remove();
+        },
+        error: function(error) {
+          // Handle error response, if necessary
+        }
+      });
+    });
+  });
+  

@@ -29,17 +29,18 @@
 </form>
 
 <h4> Add a Note: </h4>
-<form method = "DELETE" >
 <ul class="list-group list-group-flush" id="notes">
-    {% for AdditionalInfo in user.additionalInfos %}
-    <li class="list-group-item">{{ AdditionalInfo.text }}
-        <button type="button" class="close" >
-            <span aria-hidden="true">&times;</span>
+    {% for note in user.notes %}
+    <li class="list-group-item">
+      {{ note.text }}
+      <form action= "{{ url_for('views.delete_note', note_id = note.id) }}" method="POST">
+        <button type="submit" class="close" aria-label="Delete">
+          <span aria-hidden="true">&times;</span>
         </button>
+      </form>
     </li>
     {% endfor %}
-</ul>
-</form>
+  </ul>
 
 <form method = "POST" >
     <textarea name = "note" id = "note" class = "form-control"> </textarea>

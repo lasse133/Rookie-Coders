@@ -7,7 +7,8 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
     tasks = db.relationship('Task')
-    additionalInfos = db.relationship('AdditionalInfo')
+    dates = db.relationship('Date')
+    notes = db.relationship('Note')
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -16,9 +17,12 @@ class Task(db.Model):
     completed = db.Column(db.Boolean, default=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)
 
-class AdditionalInfo(db.Model):
+class Date(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.String(10), nullable=True)
-    text = db.Column(db.String(500), nullable=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
+class Note(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    text = db.Column(db.String(500), nullable=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
