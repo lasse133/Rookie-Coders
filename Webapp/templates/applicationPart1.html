@@ -28,17 +28,24 @@
     </div>
 </form>
 
+<h4> Add a Note: </h4>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.additionalInfos %}
+    <li class="list-group-item">
+        {{ note.text }}
+        <button type="button" class="close" onClick="deleteNote('{{ note.id }}')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</ul>
 <form method = "POST" >
-    <h4> Add a Note: </h4>
-    <textarea align = "bottom" note = "note" id = "note" class = "form-control"> </textarea>
+    <textarea name = "note" id = "note" class = "form-control"> </textarea>
     <br />
     <div align = "center">
     <button type = "submit" class = "btn btn-primary">Add a Note!</button>
     </div>
 </form>
-
-
-
 
 
 {% endblock %}
