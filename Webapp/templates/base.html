@@ -23,9 +23,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
+                {% if current_user.is_authenticated %}
+                <a class="nav-item nav-link" id="application1" href="/ApplicationPart1">Part 1</a>
+                <a class="nav-item nav-link" id="subTaskPersonal" href="/SubTaskPersonalData">Personal Data</a>
+                <a class="nav-item nav-link" id="subTaskAcademic" href="/SubTaskAcademicRessources">Academic Ressources</a>
+                <a class="nav-item nav-link" id="application2" href="/ApplicationPart2">Part 2</a>
+                <a class="nav-item nav-link" id="subTaskFinancial" href="/SubTaskFinancialRessources">Financial Ressources</a>
+                <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                {% else %}
                 <a class="nav-item nav-link" id="login" href="/login">Login</a>
                 <a class="nav-item nav-link" id="signUp" href="/sign_up">Sign Up</a>
-                <a class="nav-item nav-link" id="infopage" href="/infoPage">Infopage</a>
+                <a class="nav-item nav-link" id="infopage" href="/infoPage">Info</a>
+                {% endif %}
             </div>
         </div>
     </nav>
