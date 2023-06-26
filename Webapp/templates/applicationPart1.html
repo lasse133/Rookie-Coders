@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Application Part 1{%endblock %}
+
+{% block content %}
+
+<br />
+
+<div class = "text-right">
+    <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskPersonalData'"class="btn btn-outline-primary">Documents: Personal Data</button>
+</div>
+
+<br />
+
+<div class = "text-right">
+    <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskAcademicRessources'"class="btn btn-outline-primary">Documents: Academic Ressources</button>
+</div>
+
+
+<h1> Application Part 1</h1>
+
+<br />
+
+<form method = "POST" >
+    <label for ="deadline">Deadline:</label>
+    <input type = "date" id = "date" name="deadline"> </input>
+    <br />
+    <div align = "center">
+        <button type = "submit" class = "btn btn-primary">Save Date</button>
+    </div>
+</form>
+
+<form method = "POST" >
+    <h4> Add a Note: </h4>
+    <textarea align = "bottom" note = "note" id = "note" class = "form-control"> </textarea>
+    <br />
+    <div align = "center">
+    <button type = "submit" class = "btn btn-primary">Add a Note!</button>
+    </div>
+</form>
+
+
+
+
+
+{% endblock %}
+

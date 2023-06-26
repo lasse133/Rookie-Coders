@@ -52,7 +52,7 @@ def sign_up():
         elif len(password) < 4:
             flash('Password must be greater than 3 characters.', category='error')
         else:
-            new_user = User(name=name, email=email, password=generate_password_hash(password, method='sha256'))
+            new_user = User(name=name, email=email, password=generate_password_hash(password, method='scrypt'))
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)

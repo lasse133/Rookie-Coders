@@ -18,7 +18,7 @@ class Task(db.Model):
 
 class AdditionalInfo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    date = db.Column(db.String(10))
-    text = db.Column(db.String(500))
+    date = db.Column(db.String(10), nullable=True)
+    text = db.Column(db.String(500), nullable=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
