@@ -14,7 +14,7 @@ def home():
 def infoPage():
     return render_template("infoPage.html")
 
-@views.route('ApplicationPart1', methods=['GET', 'POST'])
+@views.route('ApplicationPart1', methods=['GET', 'POST', 'DELETE'])
 @login_required
 def ApplicationPart1():
     if request.method == 'POST':
@@ -22,6 +22,12 @@ def ApplicationPart1():
         new_note = AdditionalInfo(text=note, user_id=current_user.id)
         db.session.add(new_note)
         db.session.commit()
+
+    if request.method == 'DELETE':
+        db.session.delete(db.session.get(AdditionalInfo.id))
+        del AdditionalInfo.text
+        db.session.commit()
+    
     return render_template("applicationPart1.html", user=current_user)
 
 @views.route('ApplicationPart2', methods=['GET', 'POST'])
@@ -41,18 +47,18 @@ def SubTaskAcademicRessources():
 def SubTaskFinancialRessources():
     return render_template("subTaskFinancial.html", user=current_user)
 
-@views.route('/delete-note', methods=['POST'])
-def delete_note():
-    note = json.loads(request.data)
-    noteId = note['noteId']
-    note = AdditionalInfo.query.get(noteId)
-    if note:
-        if note.user_id == current_user.id:
-            db.session.delete(note)
-            db.session.commit()
+#@views.route('/delete-note', methods=['POST'])
+#def delete_note():
+ #   note = json.loads(request.data)
+  #  noteId = note['noteId']
+   # note = AdditionalInfo.query.get(noteId)
+    #if note:
+     #   if note.user_id == current_user.id:
+      #      db.session.delete(note)
+       #     db.session.commit()
     
     
-    return jsonify({})
+    #return jsonify({})
 
 
 

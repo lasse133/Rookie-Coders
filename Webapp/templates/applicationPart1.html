@@ -29,16 +29,18 @@
 </form>
 
 <h4> Add a Note: </h4>
+<form method = "DELETE" >
 <ul class="list-group list-group-flush" id="notes">
-    {% for note in user.additionalInfos %}
-    <li class="list-group-item">
-        {{ note.text }}
-        <button type="button" class="close" onClick="deleteNote('{{ note.id }}')">
+    {% for AdditionalInfo in user.additionalInfos %}
+    <li class="list-group-item">{{ AdditionalInfo.text }}
+        <button type="button" class="close" >
             <span aria-hidden="true">&times;</span>
         </button>
     </li>
     {% endfor %}
 </ul>
+</form>
+
 <form method = "POST" >
     <textarea name = "note" id = "note" class = "form-control"> </textarea>
     <br />
@@ -46,6 +48,7 @@
     <button type = "submit" class = "btn btn-primary">Add a Note!</button>
     </div>
 </form>
+
 
 
 {% endblock %}
