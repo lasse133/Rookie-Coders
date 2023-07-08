@@ -28,6 +28,39 @@
     </div>
 </form>
 
+<form action="/add" method="POST">
+  <div>
+    <label for="title"> Add a personal Task</label>
+    <input type="text" name="title" placeholder="Enter task">
+    <input type="text" name="description" placeholder="Enter description">
+    <br>
+    <div align = "center">
+    <button type="add" class="btn btn-primary">Add Task</button>
+    </div>
+  </div>
+
+  {% for task in user.tasks %}
+  <div class ="Panel Panel-default">
+      <div class ="panel-Überschrift">
+        <h3 class = "Panel-title"> {{ task.title }}</h3>
+      </div>
+      <div class ="Panel-body"> {{ task.description }}</div>
+
+  </div>
+  <div>
+      {% if task.completed == false %}
+        <span class="badge badge-warning">Not completed</span>
+      {% else %}
+        <span class="badge badge-success">Completed</span>
+      {% endif %}
+  </div>
+  <div>
+      <button type="button" onClick="location.href='/complete/{{ task.id }}'" class="btn btn-success">Done</button>
+      <button type="button" onClick="location.href='/delete/{{ task.id }}'" class="btn btn-danger" >Delete</button>
+  {% endfor %}
+</div>
+</form>
+
 <h4> Add a Note: </h4>
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
