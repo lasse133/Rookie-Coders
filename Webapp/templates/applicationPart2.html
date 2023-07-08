@@ -7,5 +7,89 @@
     <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskFinancialRessources'"class="btn btn-outline-primary">Documents: Personal Data</button>
 </div>
 
-{% endblock %}
 
+
+<div>
+    {% for date in user.dates %} 
+    {% if date.page_name == 'Part 2' %}   
+    <span class="label label-info">Deadline: {{ date.date }}</span>
+    <div>
+      <button type="button" onClick="location.href='/deleteDatePart2/{{ date.id }}'" class="btn btn-danger" >Delete</button>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  
+  <form action="/save-datePart2" method = "POST" >
+      <label for ="date">Deadline:</label>
+      <input type = "date" id = "date" name="date"> </input>
+      <br />
+      <div align = "center">
+          <button type = "submit" class = "btn btn-primary">Save Date</button>
+      </div>
+  </form>
+  
+  <form action="/addTaskPart2" method="POST">
+    <div>
+      <label for="title"> Add a personal Task</label>
+      <input type="text" name="title" placeholder="Enter task">
+      <input type="text" name="description" placeholder="Enter description">
+      <br>
+      <div align = "center">
+      <button type="add" class="btn btn-primary">Add Task</button>
+      </div>
+    </div>
+  
+    {% for task in user.tasks %}
+    {% if task.page_name == 'Part 2' %}
+    <div class ="Panel Panel-default">
+        <div class ="panel-Überschrift">
+          <h3 class = "Panel-title"> {{ task.title }}</h3>
+        </div>
+        <div class ="Panel-body"> {{ task.description }}</div>
+  
+    </div>
+    <div>
+        {% if task.completed == false %}
+          <span class="badge badge-warning">Not completed</span>
+        {% else %}
+          <span class="badge badge-success">Completed</span>
+        {% endif %}
+    </div>
+    <div>
+        <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-success">Done</button>
+        <button type="button" onClick="location.href='/deleteTaskPart2/{{ task.id }}'" class="btn btn-danger" >Delete</button>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </form>
+  
+  <h4> Add a Note: </h4>
+  <ul class="list-group list-group-flush" id="notes">
+      {% for note in user.notes %}
+      {% if note.page_name == 'Part 2' %}
+      <li class="list-group-item">
+        {{ note.text }}
+        <form action= "{{ url_for('views.delete_notePart2', note_id = note.id) }}" method="POST">
+          <button type="submit" class="close" aria-label="Delete">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </form>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  
+  <form action="/addNotePart2" method = "POST" >
+      <textarea name = "notePart2" id = "notePart2" class = "form-control"> </textarea>
+      <br />
+      <div align = "center">
+      <button type = "submit" class = "btn btn-primary">Add a Note!</button>
+      </div>
+  </form>
+  
+  
+  
+{% endblock %}
+  
+  

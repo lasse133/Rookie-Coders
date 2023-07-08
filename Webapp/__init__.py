@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager, login_manager
+from flask_migrate import Migrate
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -19,10 +20,25 @@ def create_app():
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
-    from .models import User
+    from .models import User, Task
 
     with app.app_context():
         db.create_all()
+
+        tasks = [
+            {'title': 'First Task', 'description': 'Insert Personal Data', 'page_name' : 'Part 1'},
+            {'title': 'Second Task', 'description': 'Provide Academic Ressources', 'page_name' : 'Part 1'},
+            {'title': 'Third Task', 'description': 'Write Letter of Motivation', 'page_name' : 'Part 1'}
+        ]
+
+        for task in tasks:
+            title = task['title']
+            description = task['description']
+            page_name = task['page_name']
+            new_task = Task(title=title, description=description, page_name=page_name)
+            db.session.add(new_task)
+
+        db.session.commit()
 
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
