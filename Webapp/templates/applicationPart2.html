@@ -57,9 +57,15 @@
         {% endif %}
     </div>
     <div>
-        <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-success">Done</button>
-        <button type="button" onClick="location.href='/deleteTaskPart2/{{ task.id }}'" class="btn btn-danger" >Delete</button>
-    </div>
+      {% if task.completed == false %}
+      <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-success">Done</button>
+      {% else %}
+      <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-danger">Undone</button>
+      {% endif %}
+      {% if task.title != 'Sixth Task' and task.title != 'Seventh Task' and task.title != 'Eighth Task' and task.title != 'Ninth Task' and task.title != 'Tenth Task' and task.title != 'Eleventh Task' %}
+      <button type="button" onClick="location.href='/deleteTaskPart2/{{ task.id }}'" class="btn btn-danger" >Delete</button>
+      {% endif %}
+  </div>
     {% endif %}
     {% endfor %}
   </form>

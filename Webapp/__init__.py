@@ -2,7 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager, login_manager
-from flask_migrate import Migrate
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -25,18 +24,9 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-        tasks = [
-            {'title': 'First Task', 'description': 'Insert Personal Data', 'page_name' : 'Part 1'},
-            {'title': 'Second Task', 'description': 'Provide Academic Ressources', 'page_name' : 'Part 1'},
-            {'title': 'Third Task', 'description': 'Write Letter of Motivation', 'page_name' : 'Part 1'}
-        ]
-
+        tasks = Task.query.all()
         for task in tasks:
-            title = task['title']
-            description = task['description']
-            page_name = task['page_name']
-            new_task = Task(title=title, description=description, page_name=page_name)
-            db.session.add(new_task)
+           db.session.delete(task)
 
         db.session.commit()
 

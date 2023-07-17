@@ -17,6 +17,34 @@ def infoPage():
 @views.route('ApplicationPart1', methods=['GET', 'POST', 'DELETE'])
 @login_required
 def ApplicationPart1():
+
+    tasks = [
+        {'title': 'First Task', 'description': 'Insert Personal Data', 'page_name' : 'Part 1', 'user_id' : current_user.id},
+        {'title': 'Second Task', 'description': 'Provide Academic Ressources', 'page_name' : 'Part 1', 'user_id' : current_user.id},
+        {'title': 'Third Task', 'description': 'Write Letter of Motivation', 'page_name' : 'Part 1', 'user_id' : current_user.id},
+        {'title': 'Fourth Task', 'description': 'Course Selection', 'page_name' : 'Part 1', 'user_id' : current_user.id},
+        {'title': 'Fifth Task', 'description': 'Send Off First Part of the Application', 'page_name' : 'Part 1', 'user_id' : current_user.id}
+        ]
+
+    for task in tasks:
+            title = task['title']
+            description = task['description']
+            page_name = task['page_name']
+            user_id = task['user_id']
+
+             # Check if the task already exists in the database
+            existing_task = Task.query.filter_by(title=title, description=description, page_name=page_name, user_id = user_id).first()
+
+            if existing_task:
+                print("Task already exists in DB.")
+                # Task already exists
+
+            else:
+                new_task = Task(title=title, description=description, page_name=page_name, user_id = user_id)
+                db.session.add(new_task)
+
+    db.session.commit()
+
     return render_template("applicationPart1.html", user=current_user)
 
 @views.route('/addNotePart1', methods=['POST'])
@@ -86,7 +114,7 @@ def complete_taskPart1(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Part 1').first()
     task.completed = not task.completed
     db.session.commit()
-    flash('Task done', category='success')
+    # flash('Task done', category='success')
     return redirect(url_for('views.ApplicationPart1'))
 
 @views.route('/completeTaskPart2/<task_id>')
@@ -165,6 +193,34 @@ def delete_datePart2(date_id):
 @views.route('ApplicationPart2', methods=['GET', 'POST'])
 @login_required
 def ApplicationPart2():
+    
+    tasks = [
+        {'title': 'Sixth Task', 'description': 'Insert Personal Data Part Two', 'page_name' : 'Part 2', 'user_id' : current_user.id},
+        {'title': 'Seventh Task', 'description': 'Provide Fincancial Sources', 'page_name' : 'Part 2', 'user_id' : current_user.id},
+        {'title': 'Eighth Task', 'description': 'Send off Second Part of the Application', 'page_name' : 'Part 2', 'user_id' : current_user.id},
+        {'title': 'Ninth Task', 'description': 'Arrange Appointment with Consulate', 'page_name' : 'Part 2', 'user_id' : current_user.id},
+        {'title': 'Tenth Task', 'description': 'Conclude Foreign Insurance', 'page_name' : 'Part 2', 'user_id' : current_user.id},
+        {'title': 'Eleventh Task', 'description': 'Find Housing', 'page_name' : 'Part 2', 'user_id' : current_user.id}
+        ]
+
+    for task in tasks:
+            title = task['title']
+            description = task['description']
+            page_name = task['page_name']
+            user_id = task['user_id']
+
+             # Check if the task already exists in the database
+            existing_task = Task.query.filter_by(title=title, description=description, page_name=page_name, user_id = user_id).first()
+
+            if existing_task:
+                print("Task already exists in DB.")
+                # Task already exists
+
+            else:
+                new_task = Task(title=title, description=description, page_name=page_name, user_id = user_id)
+                db.session.add(new_task)
+
+    db.session.commit()
     return render_template("applicationPart2.html", user=current_user)
 
 @views.route('SubTaskPersonalData', methods=['GET', 'POST'])
