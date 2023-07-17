@@ -4,39 +4,42 @@
 {% block content %}
 
 <br> 
-<h1>Financial Ressources</h1>
+
+<h1 class="display-4 text-muted">Financial Ressources</h1>
 
 <br>
   
-{% for task in user.tasks %}
-{% if task.page_name == 'Financial Ressources' %}
-<div class ="Panel Panel-default">
-    <div class ="panel-Überschrift">
-      <h3 class = "Panel-title"> {{ task.title }}</h3>
-    </div>
-    <div class ="Panel-body"> {{ task.description }}</div>
+<div class="row">
+  <div class="col-md-6">
+    {% for task in user.tasks %}
+      {% if task.page_name == 'Financial Ressources' %}
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ task.title }}</h5>
+            <p class="card-text">{{ task.description }}</p>
+            {% if task.completed == false %}
+              <span class="badge badge-warning">Not completed</span>
+            {% else %}
+              <span class="badge badge-success">Completed</span>
+            {% endif %}
+            <div>
+              {% if task.completed == false %}
+                <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-success">Done</button>
+              {% else %}
+                <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-secondary">Undo</button>
+              {% endif %}
+              {% if task.title != 'First Document' and task.title != 'Second Document' %}
+                <button type="button" onClick="location.href='/deleteTaskFinancialRessources/{{ task.id }}'" class="btn btn-danger">Delete</button>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <br>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
-<div>
-    {% if task.completed == false %}
-      <span class="badge badge-warning">Not completed</span>
-    {% else %}
-      <span class="badge badge-success">Completed</span>
-    {% endif %}
-</div>
-<div>
-  {% if task.completed == false %}
-  <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-success">Done</button>
-  {% else %}
-  <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-secondary">Undo</button>
-  {% endif %}
-  {% if task.title != 'First Document' and task.title != 'Second Document' %}
-  <button type="button" onClick="location.href='/deleteTaskFinancialRessources/{{ task.id }}'" class="btn btn-danger" >Delete</button>
-  {% endif %}
-</div>
-<br>
-{% endif %}
-{% endfor %}
-</form>
+
 
 <form action="/addTaskFinancialRessources" method="POST">
 <div class="form-group">
@@ -50,5 +53,8 @@
   </div>
 </div>
 </form>
+
+<br>
+
 {% endblock %}
 

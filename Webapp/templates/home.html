@@ -1,8 +1,31 @@
-{% extends "base.html" %} {% block title %}Home{%endblock %}
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
 
 {% block content %}
-<h1> Empowering Students to Embrace Global Learning: Apply, Explore, Succeed!</h1>
+<div class="text-left">
+  <h1>Empowering Students to Embrace Global Learning: Apply, Explore, Succeed!</h1>
+</div>
 
-<h2> Effortlessly organize and streamline your study abroad application for a seamless journey to New York City.</h2>
+<div class="text-left">
+  <h2>Effortlessly organize and streamline your study abroad application for a seamless journey to New York City.</h2>
+</div>
+
+<div class="text-center">
+  <a href="/sign_up" class="btn btn-primary">Sign Up Now</a>
+</div>
+
+<br>
+
+<div class="text-center">
+  <h3>Start with Step One:</h3>
+  <p>Gain an overview of the entire application process, including its individual steps and requirements.</p>
+</div>
+
+<div class="text-center">
+  <a href="/infoPage" class="btn btn-primary">Learn More</a>
+</div>
 
 {% endblock %}
