@@ -2,25 +2,20 @@
 
 {% block content %}
 
-<br />
+<br>
+<h1> Application Part 1</h1>
 
 <div class = "text-right">
     <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskPersonalData'"class="btn btn-outline-primary">Documents: Personal Data</button>
-</div>
-
-<br />
-
-<div class = "text-right">
     <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskAcademicRessources'"class="btn btn-outline-primary">Documents: Academic Ressources</button>
 </div>
 
-
-<h1> Application Part 1</h1>
+<br />
 
 <br />
 
 
-<div>
+<div class = "text-left">
   {% for date in user.dates %}
   {% if date.page_name == 'Part 1' %}  
     <span class="label label-info">Deadline: {{ date.date }}</span>
@@ -35,21 +30,12 @@
     <label for ="date">Deadline:</label>
     <input type = "date" id = "date" name="date"> </input>
     <br />
-    <div align = "center">
+    <div align = "left">
         <button type = "submit" class = "btn btn-primary">Save Date</button>
     </div>
 </form>
 
-<form action="/addTaskPart1" method="POST">
-  <div>
-    <label for="title"> Add a personal Task</label>
-    <input type="text" name="title" placeholder="Enter task">
-    <input type="text" name="description" placeholder="Enter description">
-    <br>
-    <div align = "center">
-    <button type="add" class="btn btn-primary">Add Task</button>
-    </div>
-  </div>
+<br>
 
   {% for task in user.tasks %}
   {% if task.page_name == 'Part 1' %}
@@ -58,7 +44,6 @@
         <h3 class = "Panel-title"> {{ task.title }}</h3>
       </div>
       <div class ="Panel-body"> {{ task.description }}</div>
-
   </div>
   <div>
       {% if task.completed == false %}
@@ -71,15 +56,34 @@
       {% if task.completed == false %}
       <button type="button" onClick="location.href='/completeTaskPart1/{{ task.id }}'" class="btn btn-success">Done</button>
       {% else %}
-      <button type="button" onClick="location.href='/completeTaskPart1/{{ task.id }}'" class="btn btn-danger">Undone</button>
+      <button type="button" onClick="location.href='/completeTaskPart1/{{ task.id }}'" class="btn btn-secondary">Undo</button>
       {% endif %}
       {% if task.title != 'First Task' and task.title != 'Second Task' and task.title != 'Third Task' and task.title != 'Fourth Task' and task.title != 'Fifth Task' %}
       <button type="button" onClick="location.href='/deleteTaskPart1/{{ task.id }}'" class="btn btn-danger" >Delete</button>
       {% endif %}
   </div>
+  <br>
   {% endif %}
   {% endfor %}
 </form>
+
+<br>
+
+<form action="/addTaskPart1" method="POST">
+  <div class="form-group">
+    <label for="title">Add a Personal Task</label>
+    <div class="input-group">
+      <input type="text" class="form-control" name="title" placeholder="Enter task">
+      <input type="text" class="form-control" name="description" placeholder="Enter description">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary ml-2">Add Task</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
 
 <h4> Add a Note: </h4>
 <ul class="list-group list-group-flush" id="notes">
@@ -104,8 +108,5 @@
     <button type = "submit" class = "btn btn-primary">Add a Note!</button>
     </div>
 </form>
-
-
-
 {% endblock %}
 

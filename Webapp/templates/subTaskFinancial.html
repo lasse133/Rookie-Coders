@@ -1,1 +1,54 @@
 {% extends "base.html" %} {% block title %}Financial Ressources{%endblock %}
+
+
+{% block content %}
+
+<br> 
+<h1>Financial Ressources</h1>
+
+<br>
+  
+{% for task in user.tasks %}
+{% if task.page_name == 'Financial Ressources' %}
+<div class ="Panel Panel-default">
+    <div class ="panel-Überschrift">
+      <h3 class = "Panel-title"> {{ task.title }}</h3>
+    </div>
+    <div class ="Panel-body"> {{ task.description }}</div>
+</div>
+<div>
+    {% if task.completed == false %}
+      <span class="badge badge-warning">Not completed</span>
+    {% else %}
+      <span class="badge badge-success">Completed</span>
+    {% endif %}
+</div>
+<div>
+  {% if task.completed == false %}
+  <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-success">Done</button>
+  {% else %}
+  <button type="button" onClick="location.href='/completeTaskFinancialRessources/{{ task.id }}'" class="btn btn-secondary">Undo</button>
+  {% endif %}
+  {% if task.title != 'First Document' and task.title != 'Second Document' %}
+  <button type="button" onClick="location.href='/deleteTaskFinancialRessources/{{ task.id }}'" class="btn btn-danger" >Delete</button>
+  {% endif %}
+</div>
+<br>
+{% endif %}
+{% endfor %}
+</form>
+
+<form action="/addTaskFinancialRessources" method="POST">
+<div class="form-group">
+  <label for="title">Add a Personal Task</label>
+  <div class="input-group">
+    <input type="text" class="form-control" name="title" placeholder="Enter task">
+    <input type="text" class="form-control" name="description" placeholder="Enter description">
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-primary ml-2">Add Task</button>
+    </div>
+  </div>
+</div>
+</form>
+{% endblock %}
+

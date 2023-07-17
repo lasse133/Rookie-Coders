@@ -1,13 +1,12 @@
 {% extends "base.html" %} {% block title %}Application Part 1{%endblock %}
 
 {% block content %}
+<br> 
 <h1> Application Part 2</h1>
 
-<div class = "text-center">
-    <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskFinancialRessources'"class="btn btn-outline-primary">Documents: Personal Data</button>
+<div class = "text-right">
+    <button type="submit" onclick="location.href='http://127.0.0.1:5000/SubTaskFinancialRessources'"class="btn btn-outline-primary">Documents: Personal Data Part Two</button>
 </div>
-
-
 
 <div>
     {% for date in user.dates %} 
@@ -24,30 +23,20 @@
       <label for ="date">Deadline:</label>
       <input type = "date" id = "date" name="date"> </input>
       <br />
-      <div align = "center">
+      <div align = "left">
           <button type = "submit" class = "btn btn-primary">Save Date</button>
       </div>
   </form>
-  
-  <form action="/addTaskPart2" method="POST">
-    <div>
-      <label for="title"> Add a personal Task</label>
-      <input type="text" name="title" placeholder="Enter task">
-      <input type="text" name="description" placeholder="Enter description">
-      <br>
-      <div align = "center">
-      <button type="add" class="btn btn-primary">Add Task</button>
-      </div>
-    </div>
+
+  <br>
   
     {% for task in user.tasks %}
     {% if task.page_name == 'Part 2' %}
     <div class ="Panel Panel-default">
-        <div class ="panel-Überschrift">
+        <div class ="panel-Uberschrift">
           <h3 class = "Panel-title"> {{ task.title }}</h3>
         </div>
         <div class ="Panel-body"> {{ task.description }}</div>
-  
     </div>
     <div>
         {% if task.completed == false %}
@@ -60,14 +49,28 @@
       {% if task.completed == false %}
       <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-success">Done</button>
       {% else %}
-      <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-danger">Undone</button>
+      <button type="button" onClick="location.href='/completeTaskPart2/{{ task.id }}'" class="btn btn-secondary">Undo</button>
       {% endif %}
       {% if task.title != 'Sixth Task' and task.title != 'Seventh Task' and task.title != 'Eighth Task' and task.title != 'Ninth Task' and task.title != 'Tenth Task' and task.title != 'Eleventh Task' %}
       <button type="button" onClick="location.href='/deleteTaskPart2/{{ task.id }}'" class="btn btn-danger" >Delete</button>
       {% endif %}
   </div>
+  <br>
     {% endif %}
     {% endfor %}
+  </form>
+
+  <form action="/addTaskPart2" method="POST">
+    <div class="form-group">
+      <label for="title">Add a Personal Task</label>
+      <div class="input-group">
+        <input type="text" class="form-control" name="title" placeholder="Enter task">
+        <input type="text" class="form-control" name="description" placeholder="Enter description">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary ml-2">Add Task</button>
+        </div>
+      </div>
+    </div>
   </form>
   
   <h4> Add a Note: </h4>
@@ -92,9 +95,7 @@
       <div align = "center">
       <button type = "submit" class = "btn btn-primary">Add a Note!</button>
       </div>
-  </form>
-  
-  
+  </form>  
   
 {% endblock %}
   
