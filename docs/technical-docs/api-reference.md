@@ -33,7 +33,7 @@ nav_order: 4
 
 **Sample output:**
 
-![Login page](../assets/images/login.PNG)
+![Login page](../assets/images/Login.PNG)
 
 ---
 
