@@ -6,7 +6,7 @@ nav_order: 1
 Rookie Coders
 {: .label }
 
-# [Value proposition]
+# Value proposition
 
 ## Das Kundenprofil der Nutzerin
 - Job: Student
