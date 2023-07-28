@@ -13,7 +13,7 @@ Lasse Schmidt und Isabel Kaspar
 
 ![Rookie Coders Mock Up](../assets/images/RookieCodersMockUp.png)
 
-Link zu unserem Miro-Board:
+### Link zu unserem Miro-Board:
 
 https://miro.com/app/board/uXjVM-pFY7o=/?share_link_id=52814562512
 

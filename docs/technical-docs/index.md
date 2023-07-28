@@ -4,7 +4,7 @@ has_children: true
 nav_order: 2
 ---
 
-[Jane Dane]
+Rookie Coders - Abroad Assist
 {: .label }
 
-# [Technical documentation]
+# Technical documentation

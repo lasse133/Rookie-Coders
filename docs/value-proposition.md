@@ -8,17 +8,18 @@ Rookie Coders
 
 # Value Proposition
 
-Du bist 
+## Du bist 
 - Studierende*r an der HWR Berlin
 - Im Bewerbungsprozess für ein Auslandssemester in NYC
 
-Du möchtest 
+## Du möchtest 
 - Den Überblick über wichtige Aufgaben und Termine behalten
 - Das Gefühl der Überforderung loswerden
 - Die Kontrolle über den gesamten Planungsprozess behalten
 
 
-Wir verstehen Deinen Bedarf an einer Webanwendung, die Dir dabei hilft, Dein bevorstehendes Semester im Ausland effektiv zu verwalten und zu planen. Basierend auf Deiner spezifischen Situation als Student oder Studentin an der HWR Berlin im Bewerbungsprozess für eine Partneruniversität in New York City sind wir hier, um Deine Herausforderungen anzugehen und die Handhabung all Deiner Aufgaben erheblich zu vereinfachen.
+## Wir verstehen
+Deinen Bedarf an einer Webanwendung, die Dir dabei hilft, Dein bevorstehendes Semester im Ausland effektiv zu verwalten und zu planen. Basierend auf Deiner spezifischen Situation als Student oder Studentin an der HWR Berlin im Bewerbungsprozess für eine Partneruniversität in New York City sind wir hier, um Deine Herausforderungen anzugehen und die Handhabung all Deiner Aufgaben erheblich zu vereinfachen.
 
 Der Bewerbungsprozess beinhaltet das Hochladen verschiedener Dokumente (erster Teil, zweiter Teil und eventuell zusätzlich erforderliche Dokumente) auf das Portal der Universität. Sobald Du alle erforderlichen Dokumente innerhalb des festgelegten Zeitrahmens erfolgreich eingereicht hast, wird die Universität das DS-2019 ausstellen, ein wichtiges Dokument für Dein Visum und somit für die Teilnahme am Austauschbesucherprogramm. Darüber hinaus stellt die Suche nach einer geeigneten Unterkunft in New York ihre eigenen Herausforderungen dar.
 

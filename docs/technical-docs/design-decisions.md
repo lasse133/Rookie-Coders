@@ -31,7 +31,7 @@ Updated
 
 ### Problem statement
 
-Die Herausforderung besteht darin, eine Struktur für die Verwaltung von Aufgaben zu schaffen, um Benutzern die Möglichkeit zu geben, verschiedene Aufgaben anzuzeigen und abzuschließen. Es gibt Unteraufgaben, die verschiedenen Tasks zugeordnet sind. Das Problem besteht darin, dass eine klare Aufgabenstruktur gewährleistet werden muss.
+Die Herausforderung besteht darin, eine Struktur für die Verwaltung von Aufgaben zu schaffen, um Benutzern die Möglichkeit zu geben, verschiedene Tasks anzuzeigen und abzuschließen. Es gibt einige Aufgaben, die verschiedenen Tasks zugeordnet sind. Das Problem besteht darin, dass eine klare Aufgabenstruktur gewährleistet werden muss.
 
 ### Decision
 

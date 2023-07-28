@@ -4,7 +4,7 @@ has_children: true
 nav_order: 4
 ---
 
-[Jane Dane]
+Rookie Coders - Abroad Assist
 {: .label }
 
-# [Team evaluation]
+# Team evaluation
