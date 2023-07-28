@@ -47,7 +47,7 @@ nav_order: 4
 
 **Sample output:**
 
-![Login page](../assets/images/login.png)
+![Login page](../assets/images/login.PNG)
 
 ---
 
@@ -79,7 +79,7 @@ Browser shows: `Homepage`
 
 **Sample output:**
 
-![Sign up page](../assets/images/Registration.png)
+![Sign up page](../assets/images/Registration.PNG)
 
 ---
 
@@ -95,7 +95,7 @@ Browser shows: `Homepage`
 
 **Sample output:**
 
-![Home page](../assets/images/Homepage.png)
+![Home page](../assets/images/Homepage.PNG)
 
 --- 
 
@@ -111,7 +111,7 @@ Browser shows: `Homepage`
 
 **Sample output:**
 
-![Info page](../assets/images/Infopage.png)
+![Info page](../assets/images/Infopage.PNG)
 
 ---
 
@@ -127,7 +127,7 @@ Browser shows: `Homepage`
 
 **Sample output:**
 
-![Application Part 1](../assets/images/ApplicationPart1.png)
+![Application Part 1](../assets/images/ApplicationPart1.PNG)
 
 ---
 
@@ -159,7 +159,7 @@ Browser shows: `Application Part 1 or Part 2 with no deadline`
 
 **Sample output:**
 
-![Date saved to Application Part 1](../assets/images/SaveDate.png)
+![Date saved to Application Part 1](../assets/images/SaveDate.PNG)
 
 ---
 
@@ -191,7 +191,7 @@ Browser shows: `Application Part 1 or Part 2 without the date`
 
 **Sample output:** Shows Application Part 1 or Part 2 with added note : 
 
-![Note added to Application Part 1](../assets/images/AddNote.png)
+![Note added to Application Part 1](../assets/images/AddNote.PNG)
 
 ---
 
@@ -223,7 +223,7 @@ Browser shows: `Application Part 1 or Part 2 without the added note.`
 
 **Sample output:** Task has been to Application Part 1 or the other pages. 
 
-![Task added to Application Part 1](../assets/images/AddTask.png)
+![Task added to Application Part 1](../assets/images/AddTask.PNG)
 
 ---
 
@@ -239,7 +239,7 @@ Browser shows: `Application Part 1 or Part 2 without the added note.`
 
 **Sample output:**
 
-![Task completed on Application Part 1](../assets/images/TaskCompleted.png)
+![Task completed on Application Part 1](../assets/images/TaskCompleted.PNG)
 
 
 ---
