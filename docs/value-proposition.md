@@ -8,11 +8,21 @@ Rookie Coders
 
 # Value Proposition
 
-Wir verstehen Ihren Bedarf an einer Webanwendung, die Ihnen dabei hilft, Ihr bevorstehendes Semester im Ausland effektiv zu verwalten und zu planen. Basierend auf Ihrer spezifischen Situation als Student oder Studentin an der HWR Berlin im Bewerbungsprozess für eine Partneruniversität in New York City sind wir hier, um Ihre Herausforderungen anzugehen und die Handhabung all Ihrer Aufgaben erheblich zu vereinfachen.
+Du bist 
+- Studierende*r an der HWR Berlin
+- Im Bewerbungsprozess für ein Auslandssemester in NYC
 
-Der Bewerbungsprozess beinhaltet das Hochladen verschiedener Dokumente (erster Teil, zweiter Teil und eventuell zusätzlich erforderliche Dokumente) auf das Portal der Universität. Sobald Sie alle erforderlichen Dokumente innerhalb des festgelegten Zeitrahmens erfolgreich eingereicht haben, wird die Universität das DS-2019 ausstellen, ein wichtiges Dokument für Ihr Visum und somit für die Teilnahme am Austauschbesucherprogramm. Darüber hinaus stellt die Suche nach einer geeigneten Unterkunft in New York ihre eigenen Herausforderungen dar.
+Du möchtest 
+- Den Überblick über wichtige Aufgaben und Termine behalten
+- Das Gefühl der Überforderung loswerden
+- Die Kontrolle über den gesamten Planungsprozess behalten
 
-Unser Fokus liegt darauf, Ihnen ein Werkzeug zur Verfügung zu stellen, das es Ihnen ermöglicht, während des Planungsprozesses organisiert zu bleiben, wichtige Aufgaben und Fristen im Blick zu behalten und das Gefühl von Überforderung zu reduzieren. Wir möchten, dass Sie sich besser organisiert, effizienter und in Kontrolle Ihres Planungsprozesses fühlen.
+
+Wir verstehen Deinen Bedarf an einer Webanwendung, die Dir dabei hilft, Dein bevorstehendes Semester im Ausland effektiv zu verwalten und zu planen. Basierend auf Deiner spezifischen Situation als Student oder Studentin an der HWR Berlin im Bewerbungsprozess für eine Partneruniversität in New York City sind wir hier, um Deine Herausforderungen anzugehen und die Handhabung all Deiner Aufgaben erheblich zu vereinfachen.
+
+Der Bewerbungsprozess beinhaltet das Hochladen verschiedener Dokumente (erster Teil, zweiter Teil und eventuell zusätzlich erforderliche Dokumente) auf das Portal der Universität. Sobald Du alle erforderlichen Dokumente innerhalb des festgelegten Zeitrahmens erfolgreich eingereicht hast, wird die Universität das DS-2019 ausstellen, ein wichtiges Dokument für Dein Visum und somit für die Teilnahme am Austauschbesucherprogramm. Darüber hinaus stellt die Suche nach einer geeigneten Unterkunft in New York ihre eigenen Herausforderungen dar.
+
+Unser Fokus liegt darauf, Dir ein Werkzeug zur Verfügung zu stellen, das es Dir ermöglicht, während des Planungsprozesses organisiert zu bleiben, wichtige Aufgaben und Fristen im Blick zu behalten und das Gefühl von Überforderung zu reduzieren. Wir möchten, dass Du Dich besser organisiert, effizienter und in Kontrolle Deines Planungsprozesses fühlst.
 
 
 ## Das Kundenprofil einer potentiellen Nutzerin

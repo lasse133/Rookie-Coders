@@ -9,6 +9,7 @@ Lasse Schmidt und Isabel Kaspar
 
 # App structure, incl. context
 
+### Klassendiagramm zur Veranschaulichung der Struktur unserer Anwendung
 
 ![Rookie Coders Klassendiagramm](../assets/images/RookieCodersKlassendiagramm.png)
 

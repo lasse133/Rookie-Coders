@@ -4,7 +4,9 @@ nav_order: 0
 ---
 
 # Rookie Coders
-Wir möchten eine Webanwendung zur Verwaltung von Aufgaben erstellen. Diese Anwendung soll Studierende dabei unterstützen, ihr bevorstehendes Auslandssemester strukturiert zu planen. Konkret ist die Kundin bzw. Zielperson eine Studentin der HWR Berlin, die sich in einem Bewerbungsprozess an einer Partnerhochschule in den USA (NYC) befindet. Es kam der Wunsch nach einer Anwendung auf, die ihre spezifischen Probleme adressiert und ihr die Abwicklung aller anstehenden Aufgaben signifikant erleichtert.
+Wir haben eine Webanwendung entwickelt, die es Studierenden ermöglicht, ihr bevorstehendes Auslandssemester strukturiert zu planen und ihre Aufgaben effizient zu verwalten.
+
+Die Anwendung richtet sich speziell an Studierende der HWR Berlin, die sich derzeit in einem Bewerbungsprozess für eine Partnerhochschule in den USA (NYC) befinden. Mit unserer Anwendung möchten wir ihre spezifischen Herausforderungen angehen und die Abwicklung aller anstehenden Aufgaben deutlich erleichtern.
 
 ## Team members
 
@@ -12,7 +14,7 @@ Wir möchten eine Webanwendung zur Verwaltung von Aufgaben erstellen. Diese Anwe
 
 About
 
-Isabel befindet sich im vierten Semester des Studiengangs Wirtschaftsinformatik an der HWR Berlin.
+Isabel befindet sich im vierten Semester des Studiengangs Wirtschaftsinformatik an der HWR Berlin. Sie wird im fünften Semester einen Auslandsaufenthalt am Baruch College in New York absolvieren. Der Bewerbungsprozess war sehr aufwendig und hat sie auf die Idee gebracht, eine Anwendung zu schreiben, die es zukünftigen Bewerbern und Bewerberinnen erleichtern soll, die organisatorische Seite des Auslandsaufenthalts im Vorhinein so einfach und entspannt wie möglich zu meistern.
 
 Matr.-Nr.
 1912676

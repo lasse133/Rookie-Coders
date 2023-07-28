@@ -9,6 +9,8 @@ Lasse Schmidt und Isabel Kaspar
 
 # App behavior
 
+### Unser Mock Up
+
 ![Rookie Coders Mock Up](../assets/images/RookieCodersMockUp.png)
 
 Link zu unserem Miro-Board:
