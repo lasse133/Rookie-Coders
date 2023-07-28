@@ -248,10 +248,13 @@ def save_datePart1():
             flash('You have already added a date. Please delete your existing date before adding a new one.', category='error')
         else:
             date = request.form.get('date')
-            new_date = Date(date=date, page_name='Part 1', user_id=current_user.id)
-            db.session.add(new_date)
-            db.session.commit()
-            flash('Date saved', category='success')
+            if date.strip():    
+                new_date = Date(date=date, page_name='Part 1', user_id=current_user.id)
+                db.session.add(new_date)
+                db.session.commit()
+                flash('Date saved', category='success')
+            else:
+                flash('Enter a date', category='error')
     return redirect(url_for('views.ApplicationPart1'))
     
 @views.route('/save-datePart2', methods=['POST'])
@@ -263,10 +266,13 @@ def save_datePart2():
             flash('You have already added a date. Please delete your existing date before adding a new one.', category='error')
         else:
             date = request.form.get('date')
-            new_date = Date(date=date, page_name='Part 2', user_id=current_user.id)
-            db.session.add(new_date)
-            db.session.commit()
-            flash('Date saved', category='success')
+            if date.strip():
+                new_date = Date(date=date, page_name='Part 2', user_id=current_user.id)
+                db.session.add(new_date)
+                db.session.commit()
+                flash('Date saved', category='success')
+            else:
+                flash('Enter a date', category='error')
     return redirect(url_for('views.ApplicationPart2'))
 
 @views.route('/displayDatePart1/<date_id>')
