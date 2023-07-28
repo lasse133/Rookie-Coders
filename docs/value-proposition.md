@@ -6,10 +6,17 @@ nav_order: 1
 Rookie Coders
 {: .label }
 
-# Value proposition
+# Value Proposition
 
-## Das Kundenprofil der Nutzerin
-- Job: Student
+Wir verstehen Ihren Bedarf an einer Webanwendung, die Ihnen dabei hilft, Ihr bevorstehendes Semester im Ausland effektiv zu verwalten und zu planen. Basierend auf Ihrer spezifischen Situation als Student oder Studentin an der HWR Berlin im Bewerbungsprozess für eine Partneruniversität in New York City sind wir hier, um Ihre Herausforderungen anzugehen und die Handhabung all Ihrer Aufgaben erheblich zu vereinfachen.
+
+Der Bewerbungsprozess beinhaltet das Hochladen verschiedener Dokumente (erster Teil, zweiter Teil und eventuell zusätzlich erforderliche Dokumente) auf das Portal der Universität. Sobald Sie alle erforderlichen Dokumente innerhalb des festgelegten Zeitrahmens erfolgreich eingereicht haben, wird die Universität das DS-2019 ausstellen, ein wichtiges Dokument für Ihr Visum und somit für die Teilnahme am Austauschbesucherprogramm. Darüber hinaus stellt die Suche nach einer geeigneten Unterkunft in New York ihre eigenen Herausforderungen dar.
+
+Unser Fokus liegt darauf, Ihnen ein Werkzeug zur Verfügung zu stellen, das es Ihnen ermöglicht, während des Planungsprozesses organisiert zu bleiben, wichtige Aufgaben und Fristen im Blick zu behalten und das Gefühl von Überforderung zu reduzieren. Wir möchten, dass Sie sich besser organisiert, effizienter und in Kontrolle Ihres Planungsprozesses fühlen.
+
+
+## Das Kundenprofil einer potentiellen Nutzerin
+- Job: Studentin
 - Location: Berlin
 
 Die Kundin ist im Reisen und Leben im Ausland vertraut und hat bereits ein Auslandssemester in den Niederlanden absolviert. Da dies in Bezug auf den Umzug in ein anderes Land oder die Visabestimmungen nicht schwierig war, sucht sie nun nach einer größeren Herausforderung. Für ihr kommendes Austauschsemester wird sie nach New York gehen. Hierfür fallen viele Abgaben und Fristen an. Sie ist sehr organisiert und will den Überblick über alle anstehenden Aufgaben und Fristen behalten. Außerdem kann sie durch zu viele Aufgaben gleichzeitig gestresst werden. Im Moment steht sie vor mehreren Herausforderungen in Bezug auf ihr Auslandsstudium. Um ihr und auch weiteren Studierenden, die sich für das Auslandssemester in New York beworben haben, den Bewerbungsprozess zu erleichern, werden wir eine Web Anwendung erstellen.

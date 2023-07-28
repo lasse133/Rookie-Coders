@@ -4,7 +4,7 @@ parent: Technical Docs
 nav_order: 5
 ---
 
-[Isabel Kaspar]
+Isabel Kaspar
 {: .label }
 
 # Design decisions
