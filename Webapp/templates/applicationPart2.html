@@ -1,8 +1,10 @@
 {% extends "base.html" %} {% block title %}Application Part 1{%endblock %}
 
 {% block content %}
-<br> 
 
+<!-- Overall Styling in this .html: Bootstrap (2023) with respective documentation on their page -->
+
+<br> 
 <h1 class="display-4 text-muted">Application Part 2</h1>
 
 <div class = "text-right">
@@ -31,6 +33,8 @@
 
   <br>
   
+  <!-- patrickloeber (2020, 13. Dezember) -->
+  <!-- OpenAI (2023) -->
   <div class="row">
     <div class="col-md-6">
       {% for task in user.tasks %}
@@ -73,6 +77,8 @@
       </div>
     </div>
   </form>
+  
+  <!-- Notes: TechWithTim (2023, 29. Januar) -->
   
   <h4> Add a Note: </h4>
   <ul class="list-group list-group-flush" id="notes">

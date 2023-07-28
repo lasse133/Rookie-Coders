@@ -2,7 +2,8 @@ from flask import Blueprint, render_template, request, redirect, flash, url_for
 from flask_login import login_required, current_user
 from .models import Note, Date, Task
 from . import db
-import json
+
+# For the basics: Notebook from class: https://hwrberlin.github.io/fswd/ (Full Stack Web Dev @ HWR Berlin)
 
 views = Blueprint('views', __name__)
 
@@ -25,7 +26,8 @@ def ApplicationPart1():
         {'title': 'Fourth Task', 'description': 'Course Selection', 'page_name' : 'Part 1', 'user_id' : current_user.id},
         {'title': 'Fifth Task', 'description': 'Send Off First Part of the Application', 'page_name' : 'Part 1', 'user_id' : current_user.id}
         ]
-
+    
+    # OpenAI (2023)
     for task in tasks:
             title = task['title']
             description = task['description']
@@ -44,9 +46,9 @@ def ApplicationPart1():
                 db.session.add(new_task)
 
     db.session.commit()
-
     return render_template("applicationPart1.html", user=current_user)
 
+# TechWithTim (2023, 29. Januar)
 @views.route('/addNotePart1', methods=['POST'])
 def add_notePart1():
     if request.method == 'POST':
@@ -60,6 +62,7 @@ def add_notePart1():
             flash('Note created', category='success')
     return render_template("applicationPart1.html", user=current_user)
 
+# TechWithTim (2023, 29. Januar)
 @views.route('/addNotePart2', methods=['POST'])
 def add_notePart2():
     if request.method == 'POST':
@@ -73,6 +76,7 @@ def add_notePart2():
             flash('Note created', category='success')
     return render_template("applicationPart2.html", user=current_user)
 
+# TechWithTim (2023, 29. Januar)
 @views.route('/delete-note/Part1/<note_id>', methods=['POST'])
 def delete_notePart1(note_id):
     note = Note.query.filter_by(id=note_id, page_name='Part 1').first()
@@ -80,6 +84,7 @@ def delete_notePart1(note_id):
     db.session.commit()
     return redirect(url_for('views.ApplicationPart1'))
 
+# TechWithTim (2023, 29. Januar)
 @views.route('/delete-note/Part2/<note_id>', methods=['POST'])
 def delete_notePart2(note_id):
     note = Note.query.filter_by(id=note_id, page_name='Part 2').first()
@@ -87,6 +92,7 @@ def delete_notePart2(note_id):
     db.session.commit()
     return redirect(url_for('views.ApplicationPart2'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/addTaskPart1', methods=['POST'])
 def addPart1():
     if request.method == 'POST':
@@ -98,6 +104,7 @@ def addPart1():
         flash('Task added', category='success')
     return redirect(url_for('views.ApplicationPart1'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/addTaskPart2', methods=['POST'])
 def addPart2():
     if request.method == 'POST':
@@ -109,6 +116,7 @@ def addPart2():
         flash('Task added', category='success')
     return redirect(url_for('views.ApplicationPart2'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/addTaskPersonalData', methods=['POST'])
 def addPersonalData():
     if request.method == 'POST':
@@ -120,7 +128,7 @@ def addPersonalData():
         flash('Task added', category='success')
     return redirect(url_for('views.SubTaskPersonalData'))
 
-
+# patrickloeber (2020, 13. Dezember)
 @views.route('/addTaskAcademicRessources', methods=['POST'])
 def addAcademicRessources():
     if request.method == 'POST':
@@ -132,7 +140,7 @@ def addAcademicRessources():
         flash('Task added', category='success')
     return redirect(url_for('views.SubTaskAcademicRessources'))
 
-
+# patrickloeber (2020, 13. Dezember)
 @views.route('/addTaskFinancialRessources', methods=['POST'])
 def addFinancialRessources():
     if request.method == 'POST':
@@ -144,6 +152,7 @@ def addFinancialRessources():
         flash('Task added', category='success')
     return redirect(url_for('views.SubTaskFinancialRessources'))
 
+# completion routes  with help from OpenAI (2023)
 @views.route('/completeTaskPart1/<task_id>')
 def complete_taskPart1(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Part 1').first()
@@ -160,7 +169,6 @@ def complete_taskPart2(task_id):
     flash('Task done', category='success')
     return redirect(url_for('views.ApplicationPart2'))
 
-
 @views.route('/completeTaskPersonalData/<task_id>')
 def complete_taskPersonalData(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Personal Data').first()
@@ -168,7 +176,6 @@ def complete_taskPersonalData(task_id):
     db.session.commit()
     # flash('Task done', category='success')
     return redirect(url_for('views.SubTaskPersonalData'))
-
 
 @views.route('/completeTaskAcademicRessources/<task_id>')
 def complete_taskAcademicRessources(task_id):
@@ -178,7 +185,6 @@ def complete_taskAcademicRessources(task_id):
     # flash('Task done', category='success')
     return redirect(url_for('views.SubTaskAcademicRessources'))
 
-
 @views.route('/completeTaskFinancialRessources/<task_id>')
 def complete_taskFinancialRessources(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Financial Ressources').first()
@@ -187,6 +193,7 @@ def complete_taskFinancialRessources(task_id):
     # flash('Task done', category='success')
     return redirect(url_for('views.SubTaskFinancialRessources'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/deleteTaskPart1/<task_id>')
 def delete_taskPart1(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Part 1').first()
@@ -195,6 +202,7 @@ def delete_taskPart1(task_id):
     flash('Task deleted', category='success')
     return redirect(url_for('views.ApplicationPart1'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/deleteTaskPart2/<task_id>')
 def delete_taskPart2(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Part 2').first()
@@ -203,6 +211,7 @@ def delete_taskPart2(task_id):
     flash('Task deleted', category='success')
     return redirect(url_for('views.ApplicationPart2'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/deleteTaskPersonalData/<task_id>')
 def delete_taskPersonalData(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Personal Data').first()
@@ -211,6 +220,7 @@ def delete_taskPersonalData(task_id):
     flash('Task deleted', category='success')
     return redirect(url_for('views.SubTaskPersonalData'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/deleteTaskAcademicRessources/<task_id>')
 def delete_taskAcademicRessources(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Academic Ressources').first()
@@ -219,6 +229,7 @@ def delete_taskAcademicRessources(task_id):
     flash('Task deleted', category='success')
     return redirect(url_for('views.SubTaskAcademicRessources'))
 
+# patrickloeber (2020, 13. Dezember)
 @views.route('/deleteTaskFinancialRessources/<task_id>')
 def delete_taskFinancialRessources(task_id):
     task = Task.query.filter_by(id=task_id, page_name='Financial Ressources').first()
@@ -227,6 +238,7 @@ def delete_taskFinancialRessources(task_id):
     flash('Task deleted', category='success')
     return redirect(url_for('views.SubTaskFinancialRessources'))
 
+# Saving routes: Hilfe von OpenAI (2023)
 @views.route('/save-datePart1', methods=['POST'])
 def save_datePart1():
     if request.method == 'POST':
@@ -240,9 +252,7 @@ def save_datePart1():
             db.session.add(new_date)
             db.session.commit()
             flash('Date saved', category='success')
-
     return redirect(url_for('views.ApplicationPart1'))
-
     
 @views.route('/save-datePart2', methods=['POST'])
 def save_datePart2():
@@ -257,9 +267,7 @@ def save_datePart2():
             db.session.add(new_date)
             db.session.commit()
             flash('Date saved', category='success')
-
     return redirect(url_for('views.ApplicationPart2'))
-
 
 @views.route('/displayDatePart1/<date_id>')
 def displayDatePart1(date_id):
@@ -287,8 +295,6 @@ def delete_datePart2(date_id):
     flash('Date deleted', category='success')
     return redirect(url_for('views.ApplicationPart2'))
 
-
-
 @views.route('ApplicationPart2', methods=['GET', 'POST'])
 @login_required
 def ApplicationPart2():
@@ -301,7 +307,8 @@ def ApplicationPart2():
         {'title': 'Tenth Task', 'description': 'Conclude Foreign Insurance', 'page_name' : 'Part 2', 'user_id' : current_user.id},
         {'title': 'Eleventh Task', 'description': 'Find Housing', 'page_name' : 'Part 2', 'user_id' : current_user.id}
         ]
-
+    
+    # Hilfe von OpenAI (2023)
     for task in tasks:
             title = task['title']
             description = task['description']
@@ -330,6 +337,7 @@ def SubTaskPersonalData():
         {'title': 'Third Document', 'description': 'Vaccination Certificate', 'page_name' : 'Personal Data', 'user_id' : current_user.id},
         ]
 
+    # Hilfe von OpenAI (2023)
     for task in tasks:
             title = task['title']
             description = task['description']
@@ -357,6 +365,7 @@ def SubTaskAcademicRessources():
         {'title': 'Second Document', 'description': 'Perfomance Overview', 'page_name' : 'Academic Ressources', 'user_id' : current_user.id},
         ]
 
+    # Hilfe von OpenAI (2023)
     for task in tasks:
             title = task['title']
             description = task['description']
@@ -384,6 +393,7 @@ def SubTaskFinancialRessources():
         {'title': 'Second Document', 'description': 'Proof of Scholarship', 'page_name' : 'Financial Ressources', 'user_id' : current_user.id},
         ]
 
+    # Hilfe von OpenAI (2023)
     for task in tasks:
             title = task['title']
             description = task['description']
@@ -403,7 +413,3 @@ def SubTaskFinancialRessources():
 
     db.session.commit()
     return render_template("subTaskFinancial.html", user=current_user)
-
-
-
-

@@ -1,6 +1,9 @@
 from . import db 
 from flask_login import UserMixin
 
+# TechWithTim (2023, 29. Januar)
+# Notebook from class: https://hwrberlin.github.io/fswd/ (Full Stack Web Dev @ HWR Berlin)
+
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))

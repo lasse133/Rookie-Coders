@@ -2,6 +2,8 @@
 
 {% block content %}
 
+<!-- Overall Styling in this .html: Bootstrap (2023) with respective documentation on their page -->
+
 <head>
   <!-- Other meta tags and scripts -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
@@ -17,9 +19,7 @@
 </div>
 
 <br />
-
 <br />
-
 
 <div class = "text-left">
   {% for date in user.dates %}
@@ -42,7 +42,8 @@
 </form>
 
 <br>
-
+<!-- patrickloeber (2020, 13. Dezember) -->
+<!-- OpenAI (2023) -->
 <div class="row">
   <div class="col-md-6">
     {% for task in user.tasks %}
@@ -89,7 +90,7 @@
 </form>
 
 
-
+<!-- Notes: TechWithTim (2023, 29. Januar) -->
 
 <h4> Add a Note: </h4>
 <ul class="list-group list-group-flush" id="notes">

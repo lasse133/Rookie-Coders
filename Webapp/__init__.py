@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager, login_manager
 
+# TechWithTim (2023, 29. Januar)
+
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
