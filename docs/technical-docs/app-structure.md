@@ -26,7 +26,7 @@ Lasse Schmidt und Isabel Kaspar
 
 ![Rookie Coders Klassendiagramm](../assets/images/RookieCodersKlassendiagramm.png)
 
-### Link zu Lucid Chart: 
+### Link zu Lucid Chart
 https://lucid.app/lucidchart/06b31ea1-8d28-4c47-92c7-21bac93f265a/edit?viewport_loc=141%2C2465%2C3044%2C1135%2C0_0&invitationId=inv_1b263f21-f592-4aff-b86a-d6a828bdaa6b
 
 Unser Klassendiagramm richtet sich nach der MVC-Struktur. Daran haben wir uns auch bei dem Programmieren unserer Anwendung gehalten. 
@@ -55,7 +55,7 @@ Und sehen wie folgt aus:
 
 Dadurch, dass wir die MVC-Struktur nutzen, generieren wir eine klare Unterteilung für unsere Webapplikation. Der Vorteil ist, dass wir genau wissen, wo wir neue Funktionalitäten einfügen und wie wir diese in unsere App integrieren müssen.
 
-### Quellen:
+### Quellen
 Eck, A. (2023). Full-Stack Web Dev @ HWR Berlin. HWR Berlin. https://hwrberlin.github.io/fswd/01-python-vscode.html#2-install-visual-studio-code-and-prepare-your-workspace (zuletzt geprüft am 28.07.2023).
 
 

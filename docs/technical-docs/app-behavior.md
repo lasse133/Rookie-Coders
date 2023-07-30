@@ -25,11 +25,11 @@ Lasse Schmidt und Isabel Kaspar
 
 ![Rookie Coders Mock Up](../assets/images/RookieCodersMockUp.png)
 
-### Link zu unserem Miro-Board:
+### Link zu unserem Miro-Board
 
 https://miro.com/app/board/uXjVM-pFY7o=/?share_link_id=52814562512
 
-### Detaillierte Erläuterung der Anwendung:
+### Detaillierte Erläuterung der Anwendung
 
 Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entweder zur Infopage, zum Login oder zur Registrierung zu gehen. Auf der Infopage kann er sich über die Website informieren und entscheiden, ob er sich registrieren oder einloggen möchte. Bei der Registrierung kann er einen Account mit Namen, E-Mail und Passwort erstellen und wird zur Application Part One Seite weitergeleitet. Entscheidet sich der Benutzer für den Login, kann er sich dort mit E-Mail und Passwort anmelden und wird ebenfalls zur Application Part One weitergeleitet. Auf der Application Part One Seite hat der Benutzer verschiedene Möglichkeiten:
 
