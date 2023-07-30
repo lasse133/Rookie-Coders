@@ -4,10 +4,10 @@ parent: Team Evaluation
 nav_order: 1
 ---
 
-[Lasse Schmidt]
+Lasse Schmidt und Isabel Kaspar
 {: .label }
 
-# [Goals achieved and missed]
+# Goals achieved and missed
 {: .no_toc }
 
 <details open markdown="block">
@@ -18,3 +18,11 @@ nav_order: 1
 - TOC
 {:toc}
 </details>
+
+## Welche Ziele wurden erreicht?
+
+
+
+## Welche Ziele konnten wir nicht realisieren?
+
+## Anmerkung

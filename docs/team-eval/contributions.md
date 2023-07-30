@@ -4,10 +4,10 @@ parent: Team Evaluation
 nav_order: 4
 ---
 
-[Jane Dane]
+Rookie Coders
 {: .label }
 
-# [Summary of individual contributions]
+# Summary of individual contributions
 {: .no_toc }
 
 <details open markdown="block">
@@ -19,16 +19,16 @@ nav_order: 4
 {:toc}
 </details>
 
-## [Jane Dane]
+## Isabel Kaspar
 
 Contributions
-: Jane's first contribution
-: Jane's second contribution
-: ...
 
-## [Joe Doe]
+- Erstellen des Mock Ups
+
+## Lasse Schmidt
 
 Contributions
-: Joe's first contribution
-: Joe's second contribution
-: ...
+
+- Erstellen des Mock Ups
+
+

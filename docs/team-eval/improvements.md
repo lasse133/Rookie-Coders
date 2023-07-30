@@ -4,10 +4,10 @@ parent: Team Evaluation
 nav_order: 2
 ---
 
-[Jane Dane]
+Lasse Schmidt und Isabel Kaspar
 {: .label }
 
-# [How we would improve next time]
+# How we would improve next time
 {: .no_toc }
 
 <details open markdown="block">
@@ -18,3 +18,7 @@ nav_order: 2
 - TOC
 {:toc}
 </details>
+
+## Reflexion zu unserem Code
+
+## Reflexion zu Github

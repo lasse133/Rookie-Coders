@@ -31,15 +31,15 @@ Updated
 
 ### Problem statement
 
-Die Herausforderung besteht darin, eine Struktur für die Verwaltung von Aufgaben zu schaffen, um Benutzern die Möglichkeit zu geben, verschiedene Tasks anzuzeigen und abzuschließen. Es gibt einige Aufgaben, die verschiedenen Tasks zugeordnet sind. Das Problem besteht darin, dass eine klare Aufgabenstruktur gewährleistet werden muss.
+Die zentrale Herausforderung liegt in der Schaffung einer effektiven Aufgabenverwaltungsstruktur, die es den Benutzern ermöglicht, verschiedene Aufgaben anzuzeigen und erfolgreich abzuschließen. Einige Aufgaben können mehrere Subtasks haben, was die Notwendigkeit einer klaren und gut organisierten Aufgabenstruktur betont.
 
 ### Decision
 
-Die Implementierung einer strukturierten Aufgaben- und Unteraufgabenverwaltung ermöglicht es Benutzern, ihre Bewerbungsunterlagen effizient zu organisieren. Die Kategorisierung von Unteraufgaben nach verschiedenen Aufgabenkategorien (Personal Data, Academic Ressources, Financial Ressources) verbessert die Übersichtlichkeit und hilft Benutzern, sich auf spezifische Aufgabenbereiche zu konzentrieren. Die Unterteilung der Aufgaben in verschiedene Kategorien unterstützt die Benutzer dabei, ihre Bewerbungsprozesse gezielt zu verwalten. Diese Entscheidung wurde in der Entwurf-Phase von beiden Teammitgliedern gemeinsam getroffen.
+Durch die erfolgreiche Umsetzung einer strukturierten Aufgaben- und Unteraufgabenverwaltung auf verschiedenen Seiten unserer Anwendung erhalten Benutzer die Möglichkeit, ihre Bewerbungsunterlagen effizient zu organisieren, ohne dabei den Überblick zu verlieren. Die Aufteilung und Auslagerung von Unteraufgaben in separate Seiten, die verschiedenen Aufgabenkategorien wie "Persönliche Daten", "Akademische Ressourcen" und "Finanzielle Ressourcen" zugeordnet sind, verbessert die Übersichtlichkeit und ermöglicht es den Benutzern, sich auf spezifische Aufgabenbereiche zu konzentrieren. Diese gezielte Einteilung der Aufgaben unterstützt die Benutzer dabei, ihre Bewerbungsprozesse effektiv zu verwalten. Die Entscheidung für diese Struktur wurde in der Entwurfsphase von beiden Teammitgliedern gemeinsam getroffen.
 
 ### Regarded options
 
-Eine gemeinsame Ansicht, anstatt die Aufgaben in verschiedene Kategorien zu unterteilen. Man könnte für die Webanwendung eine flache Aufgabenliste verwenden, in der alle Aufgaben gleichwertig nebeneinanderstehen. Das hat den Vorteil, dass auch direkt alle relevanten Tasks sichtbar sind und man nicht noch extra auf eine andere Seite navigieren muss.
+Eine gemeinsame Ansicht, anstatt die Aufgaben in verschiedene Kategorien zu unterteilen und sie auf einer separaten Seite anzuzeigen. Man könnte für die Webanwendung eine flache Aufgabenliste verwenden, in der alle Aufgaben gleichwertig nebeneinanderstehen. Das hat den Vorteil, dass auch direkt alle relevanten Tasks sichtbar sind und man nicht noch extra auf eine andere Seite navigieren muss.
 
 Wie bei dem Punkt der Übersichtlichkeit kamen wir zu dem Schluss, dass wir den Nutzer nicht verlieren wollen, weil zu viele Tasks auf einmal zu bearbeiten sind. 
 
@@ -59,7 +59,7 @@ Eine einzige Seite mit vielen Tasks kann die Benutzererfahrung beeinträchtigen,
 
 ### Decision
 
-Um die Übersichtlichkeit zu erhöhen und die Benutzererfahrung zu verbessern, wurde die Webanwendung in zwei Parts aufgeteilt. In "Part 1" befinden sich die Tasks, die für den frühen Bewerbungsprozess relevant sind, und in "Part 2" werden die Tasks angezeigt, die für den späteren Verlauf des Bewerbungsprozesses relevant sind. Diese Aufteilung ermöglicht es Benutzern, sich gezielt auf die jeweiligen Phasen des Bewerbungsprozesses zu konzentrieren und erleichtert die effiziente Verwaltung ihrer Tasks. Dadurch wird die Nutzererfahrung verbessert und die Anwendung wird benutzerfreundlicher gestaltet. Diese Entscheidung wurde in der Entwurf-Phase von beiden Teammitgliedern gemeinsam getroffen.
+Um die Übersichtlichkeit zu erhöhen und die Benutzererfahrung zu verbessern, wurde die Webanwendung in zwei Parts aufgeteilt. In "Part 1" befinden sich die Tasks, die für den frühen Bewerbungsprozess relevant sind, und in "Part 2" werden die Tasks angezeigt, die für den späteren Verlauf des Bewerbungsprozesses zu erledigen sind. Diese Aufteilung ermöglicht es Benutzern, sich gezielt auf die jeweiligen Phasen des Bewerbungsprozesses zu konzentrieren und erleichtert die effiziente Verwaltung ihrer Tasks. Dadurch wird die Nutzererfahrung verbessert und die Anwendung wird benutzerfreundlicher gestaltet. Diese Entscheidung wurde in der Entwurf-Phase von beiden Teammitgliedern gemeinsam getroffen.
 
 ### Regarded options
 
@@ -83,7 +83,7 @@ Die Herausforderung bestand darin, eine geeignete Struktur für die Flask-Anwend
 
 ### Decision
 
-Blueprints wurden gewählt, um eine saubere Strukturierung der Flask-Anwendung zu ermöglichen. Die Verwendung von Blueprints erleichtert die Organisation der verschiedenen Routen und Views in separate Module, wodurch der Code besser strukturiert und leichter gewartet werden kann. Dadurch wird die Anwendung robuster und skalierbarer. Diese Entscheidung, mit Blueprints zu arbeiten, wurde von uns getroffen, als wir uns Code-Beispiele von zum Beispiel TechWithTim (2023, 29. Januar) angeschaut haben.
+Blueprints wurden gewählt, um eine saubere Strukturierung der Flask-Anwendung zu ermöglichen. Die Verwendung von Blueprints erleichtert die Organisation der verschiedenen Routen und Views in separate Module, wodurch der Code besser strukturiert werden kann. Diese Entscheidung, mit Blueprints zu arbeiten, wurde von uns getroffen, als wir uns Code-Beispiele von zum Beispiel TechWithTim (2023, 29. Januar) angeschaut haben.
 
 ### Quellen
 
@@ -104,7 +104,7 @@ Updated
 
 ### Problem statement
 
-Die Herausforderung besteht darin, eine geeignete Datenbankanbindung zu wählen, um Aufgaben (Tasks), Notizen und Datumseinträge in der Anwendung zu speichern und zu verwalten. Es muss eine Methode gefunden werden, um mit der Datenbank zu interagieren und Python-Objekte in Datenbankeinträge umzuwandeln und umgekehrt.
+Es ist imperativ, eine geeignete Datenbankanbindung zu wählen, um Aufgaben (Tasks), Notizen und Datumseinträge in der Anwendung zu speichern und zu verwalten. Es muss eine Methode gefunden werden, um mit der Datenbank zu interagieren und Python-Objekte in Datenbankeinträge umzuwandeln und umgekehrt.
 
 ### Decision
 
@@ -129,15 +129,17 @@ Updated
 
 ### Problem statement
 
-Das Problem lag darin, Benutzer über den Status ihrer Aktionen in der Anwendung informieren zu wollen/müssen, z.B. wenn eine Aufgabe hinzugefügt, gelöscht oder eine fehlerhafte Eingabe gemacht wurde. Auch beim Registrierungsprozess und Login sind Meldungen wichtig.
+Benutzer wollen bzw. sollen über den Status ihrer Aktionen in der Anwendung informiert werden, z.B. wenn eine Aufgabe hinzugefügt, gelöscht oder eine fehlerhafte Eingabe gemacht wurde. Auch beim Registrierungsprozess und Login sind Meldungen wichtig.
 
 ### Decision
 
-Die Verwendung von Flash-Nachrichten ermöglicht es, Benutzer über den Status ihrer Aktionen in der Anwendung zu informieren. Dadurch erhalten Benutzer sofortiges Feedback zu ihren Interaktionen, was die Benutzerfreundlichkeit erhöht. Flash-Nachrichten werden effektiv genutzt, um wichtige Informationen oder Fehlermeldungen anzuzeigen, ohne die Benutzeroberfläche zu überladen.
+Die Verwendung von Flash-Nachrichten ermöglicht es, Benutzer über den Status ihrer Aktionen in der Anwendung zu informieren. Sie erhalten so sofortiges Feedback zu ihren Interaktionen, was die Benutzerfreundlichkeit erhöht. 
 
 ### Quellen
 
 Nishant, V. (2020, 18. September). Flask flash() method – How to Flash Messages in Flask?. AskPython. https://www.askpython.com/python-modules/flask/flask-flash-method 
+
+TechWithTim (2023, 29. Januar). Flask-Web-App-Tutorial. GitHub. https://github.com/techwithtim/Flask-Web-App-Tutorial (zuletzt geprüft am 28.07.2023).
 
 ## 06: Flask als Web Framework
 
@@ -151,11 +153,11 @@ Updated
 
 ### Problem statement
 
-Die Herausforderung besteht darin, ein geeignetes Web-Framework für die Entwicklung der Webanwendung zu wählen, das den Anforderungen an Leichtigkeit, Flexibilität und Effizienz entspricht. Es muss ein Framework gefunden werden, das die Umsetzung der Routing-Funktionalität für die verschiedenen Seiten der Anwendung ermöglicht und eine saubere Strukturierung des Codes ermöglicht.
+Es muss ein geeignetes Web-Framework für die Entwicklung der Webanwendung gewählt werden, das unseren Anforderungen an Leichtigkeit, Flexibilität und Effizienz entspricht. Wir suchen nach einem Framework, das die Umsetzung der Routing-Funktionalität für die verschiedenen Seiten der Anwendung ermöglicht und eine saubere Strukturierung des Codes ermöglicht.
 
 ### Decision
 
-Flask wurde von uns gemeinsam als Web-Framework gewählt, da es eine leichte und flexible Lösung für die Entwicklung von Webanwendungen in Python darstellt. Die Einfachheit von Flask ermöglicht eine effiziente Umsetzung der Routing-Logik, wodurch verschiedene Seiten der Anwendung leicht zugänglich sind. Darüber hinaus erlaubt Flask eine klare Trennung von Code und Präsentation, was zu einer gut strukturierten und leicht wartbaren Anwendung führt. Wir als Anfänger haben uns gemeinsam für Flask entschieden.
+Flask wurde von uns gemeinsam als Web-Framework gewählt, da es eine leichte und flexible Lösung für die Entwicklung von Webanwendungen in Python darstellt. Die Einfachheit von Flask ermöglicht eine effiziente Umsetzung der Routing-Logik, wodurch verschiedene Seiten der Anwendung leicht zugänglich sind. Darüber hinaus erlaubt Flask eine klare Trennung von Code und Präsentation, was zu einer gut strukturierten und leicht wartbaren Anwendung führt.
 
 ### Quellen
 
@@ -179,7 +181,7 @@ Es ist wichtig, eine effektive Möglichkeit zur Benutzerauthentifizierung und Si
 
 ### Decision
 
-Flask-Login wurde von uns als Authentifizierungsmechanismus gewählt, um den Anforderungen an Sicherheit und Benutzerfreundlichkeit gerecht zu werden. Mit Flask-Login können Benutzer sich in der Anwendung anmelden und ihre Sitzungen verwalten, was eine personalisierte Aufgaben- und Notizenverwaltung ermöglicht. Durch die Verwendung von Flask-Login wird gewährleistet, dass nur autorisierte Benutzer Zugriff auf die Anwendung haben und ihre persönlichen Daten schützen können. Wir haben beispielsweise an einigen Stellen login required eingesetzt.
+Flask-Login wurde von uns als Authentifizierungsmechanismus gewählt, um den Anforderungen an Sicherheit und Benutzerfreundlichkeit gerecht zu werden. Mit Flask-Login können Benutzer sich in der Anwendung anmelden und ihre Sitzungen verwalten, was eine personalisierte Aufgaben- und Notizenverwaltung ermöglicht. Durch die Verwendung von Flask-Login wird gewährleistet, dass nur autorisierte Benutzer Zugriff auf die Anwendung haben und ihre persönlichen Daten schützen können. Wir haben beispielsweise an einigen Stellen 'login required' eingesetzt.
 
 ### Quellen
 
@@ -205,7 +207,7 @@ Benutzer haben individuelle Anforderungen an ihre Bewerbungsunterlagen und möch
 ### Decision
 
 Eine Funktion zur Hinzufügung von persönlichen Tasks wurde in die Webanwendung integriert. Dadurch können Benutzer ihre individuellen Aufgaben erstellen und verwalten, um ihre Bewerbungsunterlagen maßgeschneidert zu organisieren. Die Individualisierbarkeit trägt dazu bei, dass Benutzer die Anwendung effektiv nutzen können, indem sie ihre spezifischen Aufgabenbereiche gezielt verwalten.
-Die Möglichkeit, Notizen zu speichern, ermöglicht es Benutzern, wichtige Informationen im Zusammenhang mit ihrer Studienbewerbung zu verwalten. Die Funktion zur Datumsangabe bietet eine praktische Möglichkeit, wichtige Termine im Bewerbungsprozess im Auge zu behalten. Durch diese Funktionen kann jeder Benutzer seine Bewerbungsunterlagen individuell gestalten und seine Aufgaben und Termine personalisieren, was zu einer effizienten Organisation führt. Diese Design-Entscheidung wurde in der Entwurf-Phase von beiden Teammitgliedern gemeinsam getroffen.
+Die Möglichkeit, Notizen zu speichern, erlaubt es Benutzern, wichtige Informationen im Zusammenhang mit ihrer Studienbewerbung zu verwalten. Die Funktion zur Datumsangabe bietet eine praktische Möglichkeit, wichtige Termine im Bewerbungsprozess im Auge zu behalten. Durch diese Funktionen kann jeder Benutzer seine Bewerbungsunterlagen individuell gestalten und seine Aufgaben und Termine personalisieren, was zu einer effizienten Organisation führt. Diese Design-Entscheidung wurde in der Entwurf-Phase von beiden Teammitgliedern gemeinsam getroffen.
 
 ## 09: Jinja-Templates
 
@@ -244,7 +246,7 @@ Updated
 
 ### Problem statement
 
-Es musste eine Methode gefunden werden, um die Authentifizierungsfunktionen von den Ansichten und Routen der Anwendung zu entkoppeln, um den Code übersichtlicher, leichter wartbar und besser strukturierbar zu gestalten.
+Es musste eine Methode gefunden werden, um die Authentifizierungsfunktionen von den Ansichten und Routen der Anwendung zu entkoppeln, um den Code übersichtlicher und besser strukturierbar zu gestalten.
 
 ### Decision
 
@@ -306,7 +308,7 @@ UI-Bibliotheken: Anstelle eines reinen CSS-Frameworks könnte die Webanwendung e
 
 Die Entscheidung, Bootstrap als Framework zu verwenden, wurde aus mehreren Gründen getroffen.
 
-Zum einen hatten wir keine umfangreiche Erfahrung mit der Erstellung eines eigenen CSS von Grund auf. Die Entwicklung eines maßgeschneiderten CSS hätte einen erheblichen Zeitaufwand erfordert, und die Ressourcen hätten möglicherweise nicht im Verhältnis zum Nutzen gestanden.
+Zum einen hatten wir keine umfangreiche Erfahrung mit der Erstellung eines eigenen CSS von Grund auf. Die Entwicklung eines maßgeschneiderten CSS hätte einen erheblichen Zeitaufwand erfordert, und die Ressourcen hätten nicht im Verhältnis zum Nutzen gestanden.
 
 Darüber hinaus bietet Bootstrap vorgefertigte Stile und Layouts, die eine schnelle Entwicklung ermöglichen. Da wir ein begrenztes Zeitbudget hatten und eine schnell einsatzbereite Lösung bevorzugten, erschien uns Bootstrap als die beste Wahl. Die Verwendung von Bootstrap half uns dabei, eine ansprechende und konsistente Benutzeroberfläche zu erstellen, die auf verschiedenen Geräten gut funktioniert.
 

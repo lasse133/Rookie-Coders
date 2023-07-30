@@ -205,9 +205,9 @@ Browser shows: `Application Part 1 or Part 2 without the added note.`
 
 **Methods:** `POST`
 
-**Purpose:** Adds a new task to Part 1, Part 2 or one of the Sub Task Parts of the application. 
+**Purpose:** Adds a new task to Part 1, Part 2 or one of the Sub Task Parts of the application. (Depending on where the user is adding it.)
 
-**Sample output:** Task has been to Application Part 1 or the other pages. 
+**Sample output:** Task has been added to Application Part 1 or the other pages. 
 
 ![Task added to Application Part 1](../assets/images/AddTask.PNG)
 
