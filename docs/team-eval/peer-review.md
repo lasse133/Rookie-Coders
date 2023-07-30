@@ -37,12 +37,12 @@ Ein Aspekt, bei dem es Verbesserungspotential gibt, ist dass Lasse manchmal dazu
 
 ### My observation (Wahrnehmung)
 
-[A specific observation, regarding know-how, effectiveness, team work or from another relevant area]
+Isabel ist als Gruppenmitglied sehr verlässlich, organisiert und hat eine effektive Arbeitsweise. Unsere Koordination während des gesamten Projektes war immer gut, sodass wir während des Semesters unsere Aufgaben direkt erledigen konnten. 
 
 ### Effect on me (Wirkung)
 
-[What positive or negative effect did this observation have on the reviewer?]
+Die Gruppenarbeit mit Isabel macht jedes mal Spaß und wir sind ein gures Team. Wir ergänzen uns und können effektiv im Team zusammenarbeiten.
 
 ### Tip for the future (Wunsch)
 
-[What should be changed or strengthened for the point of view of the reviewer? ]
+Ich denke, dass Isabel davon profitieren könnte, wenn sie sich selber nicht so viel Druck machen würde. Dadurch wäre die Gruppenarbeit dann perfekt. 
