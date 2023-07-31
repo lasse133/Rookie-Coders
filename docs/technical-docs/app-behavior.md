@@ -42,6 +42,24 @@ Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entw
 -	eine Notiz hinzufügen 
 -	eine Notiz löschen
 
+Für diese Funktionen haben wir folgende Regeln festgelegt: 
+
+Bei der Registrierung: 
+-	seine eigene E-Mail benutzen, da das Benutzen der gleichen E-Mail für verschiedene Accounts nicht möglich ist. 
+-	Der Name muss länger als zwei Zeichen sein. 
+-	Die E-Mail muss länger als sieben Zeichen lang sein und ein @-Zeichen beinhalten. 
+-	Das Passwort muss länger als drei Zeichen lang sein. 
+
+Beim Einloggen: 
+-	Das Einloggen in den Account ist nur dann möglich, wenn E-Mail und Passwort mit einem vorher angelegten Account übereinstimmen. 
+
+Bei dem Datum: 
+-	Das Datum darf nicht leer sein, wenn der Button zum Hinzufügen gedrückt wird. 
+
+Bei der Notiz: 
+-	Die Notiz, die hinzugefügt werden soll, muss länger als ein Zeichen sein. Sonst kommt eine Fehlermeldung, dass die Notiz zu kurz ist und sie wird der View nicht hinzugefügt. 
+
+
 Schließlich kann der Benutzer auf einen Button klicken, um zur zweiten Seite, Application Part Two, zu gelangen. Auf dieser Seite sieht er weitere Tasks, die er zu erledigen hat, und es gibt genau die gleichen Funktionalitäten wie auf der ersten Seite.
 
 Für die Subtasks stehen nicht alle Möglichkeiten wie bei Part One oder Part Two zur Verfügung. Der Benutzer kann hier lediglich..:
