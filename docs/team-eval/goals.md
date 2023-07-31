@@ -45,5 +45,8 @@ Dieses Hindernis zeigte sich vor allem in einem Zeitmangel und fehlenden Ressour
 
 Obwohl wir Bootstrap verwendet haben, um dem Nutzer eine klare und einheitliche visuelle Erfahrung zu bieten, erkennen wir dennoch Verbesserungspotenzial in der optischen Gestaltung unserer Webinhalte. Wir sind uns bewusst, dass eine ansprechende visuelle Gestaltung das Gesamterlebnis für den Nutzer verbessern kann, und deshalb bedauern wir, dass wir dieses Ziel nicht erreichen konnten. In Zukunft könnten wir zusätzliche Ressourcen und Zeit in CSS einplanen, um das Erscheinungsbild unserer Anwendung zu verbessern.
 
+### Verwendung von WTForms
 
-### Keine Redundanz im Code
+Trotz unserer anfänglichen Planung, WTForms für die Formularverarbeitung einzusetzen, haben wir dieses Ziel nicht erreicht. Die Entscheidung darauf zu verzichten, wurde getroffen, um die Komplexität zu reduzieren und den zeitlichen Rahmen besser einzuhalten. Obwohl WTForms als etabliertes Modul angesehen wird, stellten wir fest, dass die Integration davon in unserer Webanwendung mehr Zeit und Ressourcen erfordert hätte, als wir zur Verfügung hatten.
+
+

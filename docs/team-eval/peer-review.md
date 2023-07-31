@@ -41,7 +41,7 @@ Isabel ist als Gruppenmitglied sehr verlässlich, organisiert und hat eine effek
 
 ### Effect on me (Wirkung)
 
-Die Gruppenarbeit mit Isabel macht jedes mal Spaß und wir sind ein gures Team. Wir ergänzen uns und können effektiv im Team zusammenarbeiten.
+Die Gruppenarbeit mit Isabel macht jedes mal Spaß und wir sind ein gutes Team. Wir ergänzen uns und können effektiv im Team zusammenarbeiten.
 
 ### Tip for the future (Wunsch)
 
