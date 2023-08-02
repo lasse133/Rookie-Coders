@@ -23,17 +23,17 @@
 
 <div class = "text-left">
   {% for date in user.dates %}
-  {% if date.page_name == 'Part 1' %}  
+  {% if date.page_name == 'Part1' %}  
     <span class="label label-info">Deadline: {{ date.date }}</span>
     <div>
-      <button type="button" onClick="location.href='/deleteDatePart1/{{ date.id }}'" class="btn btn-danger" >Delete</button>
+      <button type="button" onClick="location.href='/deleteDate/Part1/{{ date.id }}'" class="btn btn-danger">Delete</button>
     </div>
   {% endif %}
   {% endfor %}
 </div>
 
-<form action="/save-datePart1" method = "POST" >
-    <label for ="date">Deadline:</label>
+<form action='/saveDate/{{ "Part1" }}' method="POST">
+  <label for ="date">Deadline:</label>
     <input type = "date" id = "date" name="date"> </input>
     <br />
     <div align = "left">
@@ -47,7 +47,7 @@
 <div class="row">
   <div class="col-md-6">
     {% for task in user.tasks %}
-      {% if task.page_name == 'Part 1' %}
+      {% if task.page_name == 'Part1' %}
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">{{ task.title }}</h5>
@@ -59,12 +59,12 @@
             {% endif %}
             <div>
               {% if task.completed == false %}
-                <button type="button" onClick="location.href='/completeTaskPart1/{{ task.id }}'" class="btn btn-success">Done</button>
+                <button type="button" onClick="location.href='/completeTask/Part1/{{ task.id }}'" class="btn btn-success">Done</button>
               {% else %}
-                <button type="button" onClick="location.href='/completeTaskPart1/{{ task.id }}'" class="btn btn-secondary">Undo</button>
+                <button type="button" onClick="location.href='/completeTask/Part1/{{ task.id }}'" class="btn btn-secondary">Undo</button>
               {% endif %}
               {% if task.title != 'First Task' and task.title != 'Second Task' and task.title != 'Third Task' and task.title != 'Fourth Task' and task.title != 'Fifth Task' %}
-                <button type="button" onClick="location.href='/deleteTaskPart1/{{ task.id }}'" class="btn btn-danger">Delete</button>
+                <button type="button" onClick="location.href='/deleteTask/Part1/{{ task.id }}'" class="btn btn-danger">Delete</button>
               {% endif %}
             </div>
           </div>
@@ -76,7 +76,7 @@
 
 <br>
 
-<form action="/addTaskPart1" method="POST">
+<form action= '/addPersonalTask/{{ "Part1" }}'  method="POST">
   <div class="form-group">
     <label for="title">Add a Personal Task</label>
     <div class="input-group">
@@ -95,10 +95,10 @@
 <h4> Add a Note: </h4>
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
-    {% if note.page_name == 'Part 1' %}
+    {% if note.page_name == 'Part1' %}
     <li class="list-group-item">
       {{ note.text }}
-      <form action= "{{ url_for('views.delete_notePart1', note_id = note.id) }}" method="POST">
+      <form action= '/deleteNote/{{ "Part1" }}/{{ note.id }}' method="POST">
         <button type="submit" class="close" aria-label="Delete">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -108,12 +108,13 @@
     {% endfor %}
   </ul>
 
-<form action ="/addNotePart1" method = "POST" >
-    <textarea name = "notePart1" id = "notePart1" class = "form-control"> </textarea>
+  <form action='/addNote/{{ "Part1" }}' method="POST">
+    <textarea name="notePart1" id="notePart1" class="form-control"></textarea>
     <br />
-    <div align = "center">
-    <button type = "submit" class = "btn btn-primary">Add a Note!</button>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add a Note!</button>
     </div>
 </form>
+
 {% endblock %}
 

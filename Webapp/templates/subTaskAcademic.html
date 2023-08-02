@@ -14,7 +14,7 @@
 <div class="row">
   <div class="col-md-6">
     {% for task in user.tasks %}
-      {% if task.page_name == 'Academic Ressources' %}
+      {% if task.page_name == 'AcademicRessources' %}
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">{{ task.title }}</h5>
@@ -26,12 +26,12 @@
             {% endif %}
             <div>
               {% if task.completed == false %}
-                <button type="button" onClick="location.href='/completeTaskAcademicRessources/{{ task.id }}'" class="btn btn-success">Done</button>
+                <button type="button" onClick="location.href='/completeSubTask/AcademicRessources/{{ task.id }}'" class="btn btn-success">Done</button>
               {% else %}
-                <button type="button" onClick="location.href='/completeTaskAcademicRessources/{{ task.id }}'" class="btn btn-secondary">Undo</button>
+                <button type="button" onClick="location.href='/completeSubTask/AcademicRessources/{{ task.id }}'" class="btn btn-secondary">Undo</button>
               {% endif %}
               {% if task.title != 'First Document' and task.title != 'Second Document' %}
-                <button type="button" onClick="location.href='/deleteTaskAcademicRessources/{{ task.id }}'" class="btn btn-danger">Delete</button>
+                <button type="button" onClick="location.href='/deleteSubTask/AcademicRessources/{{ task.id }}'" class="btn btn-danger">Delete</button>
               {% endif %}
             </div>
           </div>
@@ -43,7 +43,7 @@
 </div>
 
 
-<form action="/addTaskAcademicRessources" method="POST">
+<form action='/addPersonalSubTask/{{ "AcademicRessources" }}' method="POST">
 <div class="form-group">
   <label for="title">Add a Personal Task</label>
   <div class="input-group">

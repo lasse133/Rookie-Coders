@@ -119,31 +119,15 @@ Browser shows: `Homepage`
 
 ## Save Date Part 1 or 2 
 
-### `save_datePart1()` or `save_datePart2()`
+### `save_date(page_name)`
 
-**Route:** `/save-datePart1` or `/save-datePart2`
+**Route:** `/saveDate/<page_name>`
 
 **Methods:** `POST`
 
 **Purpose:** Adds a deadline to Part 1 or 2 of the application, that is saved in the database.  
 
-**Sample output:**
-
-Browser shows: `Application Part 1 or Part 2 with no deadline`
-
----
-
-## Display Date Part 1 or 2 
-
-### `displayDatePart1(date_id)` or `displayDatePart2(date_id)`
-
-**Route:** `/displayDatePart1/<date_id>` or `/displayDatePart2/<date_id>`
-
-**Methods:** `POST`
-
-**Purpose:** Displays the deadline, that is saved in the database, to Part 1 or 2 of the application, that will be displayed under the header.  
-
-**Sample output:**
+**Sample output:** 
 
 ![Date saved to Application Part 1](../assets/images/SaveDate.PNG)
 
@@ -151,9 +135,9 @@ Browser shows: `Application Part 1 or Part 2 with no deadline`
 
 ## Delete Date Part 1 or 2 
 
-### `delete_datePart1(date_id)` or `delete_datePart2(date_id)`
+### `delete_date(page_name,date_id)`
 
-**Route:** `/deleteDatePart1/<date_id>` or `/deleteDatePart2/<date_id>`
+**Route:** `/deleteDate/<page_name>/<date_id>`
 
 **Methods:** `POST`
 
@@ -167,9 +151,9 @@ Browser shows: `Application Part 1 or Part 2 without the date`
 
 ## Add Note Part 1 or 2 
 
-### `add_notePart1()` or `add_notePart2()`
+### `add_note(page_name)`
 
-**Route:** `/addNotePart1` or `/addNotePart2`
+**Route:** `/addNote/<page_name>`
 
 **Methods:** `POST`
 
@@ -183,9 +167,9 @@ Browser shows: `Application Part 1 or Part 2 without the date`
 
 ## Delete Note Part 1 or 2 
 
-### `delete_notePart1()` or `delete_notePart2()`
+### `delete_note(page_name)`
 
-**Route:** `/delete-note/Part1/<note_id>` or `/delete-note/Part2/<note_id>`
+**Route:** `/deleteNote/<page_name>/<note_id>`
 
 **Methods:** `POST`
 
@@ -197,31 +181,48 @@ Browser shows: `Application Part 1 or Part 2 without the added note.`
 
 ---
 
-## Add Task Part 1 or Part 2 or Sub Tasks
+## Add Personal Task Part 1 or Part 2
 
-### `add_TaskPart1()` or `add_TaskPart2()` or `add_TaskPersonalData()` or `add_TaskAcademicRessources()` or `add_TaskFinancialRessources()`
+### `addPersonalTask(page_name)`
 
-**Route:** `/addTaskPart1` or `/addTaskPart2` or `/addTaskPersonalData` or `addTaskAcademicRessources` or `/addTaskFinancialRessources`
+**Route:** `/addPersonalTask`
 
 **Methods:** `POST`
 
-**Purpose:** Adds a new task to Part 1, Part 2 or one of the Sub Task Parts of the application. (Depending on where the user is adding it.)
+**Purpose:** Adds a new Personal Task to Part 1 or Part 2 of the application. (Depending on where the user is adding it.)
 
-**Sample output:** Task has been added to Application Part 1 or the other pages. 
+**Sample output:** Task has been added to Application Part 1 or Application Part 2: 
 
 ![Task added to Application Part 1](../assets/images/AddTask.PNG)
 
+
 ---
 
-## Complete Task Part 1 or Part 2 or Sub Tasks
+## Add Personal Sub Task
 
-### `complete_taskPart1(task_id)` or `complete_taskPart2(task_id)` or `complete_taskPersonalData(task_id)` or `complete_taskAcademicRessources(task_id)` or `complete_taskFinancialRessources(task_id)`
+### `addPersonalSubTask(page_name)`
 
-**Route:** `/completeTaskPart1/<task_id>` or `/complete_taskPart2<task_id>` or `/complete_taskPersonalData<task_id>` or `/complete_taskAcademicRessources<task_id>` or                              `/complete_taskFinancialRessources<task_id>`
+**Route:** `/addPersonalSubTask`
 
 **Methods:** `POST`
 
-**Purpose:** Marks a task as done on Part 1, Part 2 or one of the Sub Task Parts of the application. 
+**Purpose:** Adds a new Personal Task to the Sub Tasks Personal Data, Academic Ressources or Financial Ressources of the application. (Depending on where the user is adding it.)
+
+**Sample output:** Task has been added to Personal Data, Academic Ressources or Financial Ressources:  
+
+![Task added to Application Part 1](../assets/images/PersonalSubTaskAdded.PNG)
+
+---
+
+## Complete Task Part 1 or Part 2
+
+### `complete_task(page_name,task_id)`
+
+**Route:** `/completeTask/<page_name>/<task_id>`
+
+**Methods:** `POST`
+
+**Purpose:** Marks a task as done on Part 1, Part 2 of the application. 
 
 **Sample output:**
 
@@ -230,17 +231,48 @@ Browser shows: `Application Part 1 or Part 2 without the added note.`
 
 ---
 
-## Delete Task Part 1 or Part 2 or Sub Tasks
+## Complete Sub Task
 
-### `delete_taskPart1(task_id)` or `delete_taskPart2(task_id)` or `delete_taskPersonalData(task_id)` or `delete_taskAcademicRessources(task_id)` or `delete_taskFinancialRessources(task_id)`
+### `complete_subTask(page_name,task_id)`
 
-**Route:** `/deleteTaskPart1/<task_id>` or `/delete_taskPart2<task_id>` or `/delete_taskPersonalData<task_id>` or  `/delete_taskAcademicRessources<task_id>` or
-`/delete_taskFinancialRessources<task_id>`
+**Route:** `/completeSubTask/<page_name>/<task_id>`
+
+**Methods:** `POST`
+
+**Purpose:** Marks a task as done on the Sub Tasks Personal Data, Academic Ressources or Financial Ressources of the application.
+
+**Sample output:**
+
+![Task completed on Application Part 1](../assets/images/SubTaskCompleted.PNG)
+
+
+---
+
+## Delete Task Part 1 or Part 2
+
+### `delete_task(page_name,task_id)`
+
+**Route:** `/deleteTask/<page_name>/<task_id>`
 
 **Methods:** None
 
-**Purpose:** Deletes a task from Part 1, Part 2 or one of the Sub Task Parts of the application. 
+**Purpose:** Deletes a task from Part 1, Part 2 of the application. 
 
 **Sample output:**
 
 Browser shows: `Application Part 1 or another page, where the task has been deleted from.`
+
+
+## Delete Sub Task 
+
+### `delete_subTask(page_name,task_id)`
+
+**Route:** `/deleteSubTask/<page_name>/<task_id>`
+
+**Methods:** None
+
+**Purpose:** Deletes a task from Sub Tasks Personal Data, Academic Ressources or Financial Ressources of the application.
+
+**Sample output:**
+
+Browser shows: `shows Sub Tasks Personal Data, Academic Ressources or Financial Ressources, where the task has been deleted from.`
