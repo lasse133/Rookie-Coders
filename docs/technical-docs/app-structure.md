@@ -39,7 +39,7 @@ In der View gibt es Base, Homepage, Infopage, SignUpPage, LoginPage, Application
 
 ### Controller
 
-Im Controller sind die definierten Routes zu den gegebenen Views zu finden. Es gibt Routes für Home, Info, SignUp, Login, Logout, ApplicationPartOne, ApplicationPartTwo, SubTaskPersonalData, SubTaskAcademicRessources und SubtaskFinancialRessources. Diese Routes sind in den beiden Klassen views.py und auth.py zu finden. In auth.py befinden sich die Routes für die Authentifizierung des Benutzers, ergo SignUp, Login und Logout. Der Rest liegt in views.py. 
+Im Controller sind die definierten Routes zu den gegebenen Views zu finden. Es gibt Routes für Home, Info, SignUp, Login, Logout, ApplicationPartOne, ApplicationPartTwo, SubTaskPersonalData, SubTaskAcademicRessources und SubTaskFinancialRessources. Diese Routes sind in den beiden Klassen views.py und auth.py zu finden. In auth.py befinden sich die Routes für die Authentifizierung des Benutzers, ergo SignUp, Login und Logout. Der Rest liegt in views.py. 
 
 ![HTML-Struktur](../assets/images/HTMLStruktur1.png)
 

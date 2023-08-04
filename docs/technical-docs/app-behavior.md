@@ -31,7 +31,11 @@ Lasse Schmidt und Isabel Kaspar
 
 ### Detaillierte Erläuterung der Anwendung
 
-Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entweder zur Infopage, zum Login oder zur Registrierung zu gehen. Auf der Infopage kann er sich über die Website informieren und entscheiden, ob er sich registrieren oder einloggen möchte. Bei der Registrierung kann er einen Account mit Namen, E-Mail und Passwort erstellen und wird zur Application Part One Seite weitergeleitet. Entscheidet sich der Benutzer für den Login, kann er sich dort mit E-Mail und Passwort anmelden und wird ebenfalls zur Application Part One weitergeleitet. Auf der Application Part One Seite hat der Benutzer verschiedene Möglichkeiten:
+Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entweder zur Infopage, zum Login oder zur Registrierung zu gehen. Auf der Infopage kann er sich über die Website informieren und entscheiden, ob er sich registrieren oder einloggen möchte. Bei der Registrierung kann er einen Account mit Namen, E-Mail und Passwort erstellen und wird zur Application Part One Seite weitergeleitet. Entscheidet sich der Benutzer für den Login, kann er sich dort mit E-Mail und Passwort anmelden und wird ebenfalls zur Application Part One weitergeleitet. 
+
+#### Kernfunktionen
+
+Auf der Application Part One Seite hat der Benutzer verschiedene Möglichkeiten:
 
 -	eine Deadline hinzufügen 
 -	eine Deadline löschen
@@ -41,6 +45,20 @@ Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entw
 -	einen selbst hinzugefügten Task wieder löschen
 -	eine Notiz hinzufügen 
 -	eine Notiz löschen
+
+Schließlich kann der Benutzer auf einen Button klicken, um zur zweiten Seite, Application Part Two, zu gelangen. Auf dieser Seite sieht er weitere Tasks, die er zu erledigen hat, und es gibt genau die gleichen Funktionalitäten wie auf der ersten Seite.
+
+#### Subtasks
+
+Für die Subtasks stehen nicht alle Möglichkeiten wie bei Part One oder Part Two zur Verfügung. Der Benutzer kann hier lediglich..:
+
+- einen Task als erledigt markieren oder wieder als nicht erledigt markieren
+- zurück auf Part One bzw. Part Two gelangen (über die Navigationsleiste)
+- einen weiteren individuellen Task zur standardisierten Liste hinzufügen 
+- einen selbst hinzugefügten Task wieder löschen
+
+
+#### Regeln
 
 Für all die oben erläuterten Funktionen haben wir folgende Regeln festgelegt: 
 
@@ -58,14 +76,3 @@ Bei dem Datum:
 
 Bei der Notiz: 
 -	Die Notiz, die hinzugefügt werden soll, muss länger als ein Zeichen sein. Sonst kommt eine Fehlermeldung, dass die Notiz zu kurz ist und sie wird der View nicht hinzugefügt. 
-
-
-Schließlich kann der Benutzer auf einen Button klicken, um zur zweiten Seite, Application Part Two, zu gelangen. Auf dieser Seite sieht er weitere Tasks, die er zu erledigen hat, und es gibt genau die gleichen Funktionalitäten wie auf der ersten Seite.
-
-Für die Subtasks stehen nicht alle Möglichkeiten wie bei Part One oder Part Two zur Verfügung. Der Benutzer kann hier lediglich..:
-
-- einen Task als erledigt markieren oder wieder als nicht erledigt markieren
-- zurück auf Part One bzw. Part Two gelangen (über die Navigationsleiste)
-- einen weiteren individuellen Task zur standardisierten Liste hinzufügen 
-- einen selbst hinzugefügten Task wieder löschen
-
