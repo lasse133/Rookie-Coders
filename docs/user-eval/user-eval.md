@@ -31,11 +31,12 @@ Aktualisiert am
 
 ### Ziel
 
-Von welchen Punkten auf der Website kann der User sich registrieren? Wie ist der Ablauf bei der Registrierung? Gibt es Unannehmlichkeiten bei dem Registrierungsprozess?
+Von welchen Punkten auf der Website kann sich der User registrieren? Wie ist der Ablauf bei der Registrierung? Gibt es Unannehmlichkeiten bei dem Registrierungsprozess?
 
 ### Methode
 
 Die Methode besteht darin, so vorzugehen, als wäre ich (Isabel, eigentlich die Rolle der Entwicklerin) in der Rolle des Users mit Erfahrungswerten einer Person, die sich bereits auf anderen Websites registriert hat und mit dem grundsätzlichen Prozess vertraut ist.  
+
 ### Ergebnisse
 
 Der Start der Registrierung verläuft so, dass sich der User auf der Homepage bzw. Landing Page befindet. Hier hat er die Optionen, entweder über den Sign Up-Button auf der Seite zu gehen oder die Navigationsleiste dafür zu verwenden. Er hat also zwei Wege, die ihm zur Verfügung stehen, um die Registrierung zu beginnen. 
@@ -91,9 +92,9 @@ Aktualisiert am
 ### Ziel
 
 Szenario: Ein Benutzer ist bereits eingeloggt und befindet sich auf der Application Part One oder Two Seite und möchte dort die Notizfunktion nutzen: 
-- Der Benutzer erstellt eine Notiz mit einem beliebigen Text als Inhalt
-- Der Benutzer löscht die erstellte Notiz wieder
-- Der Benutzer erstellt mehrere Notizen und achtet darauf, ob es ein Limit für die Anzahl der erstellten Notizen gibt
+- Der Benutzer erstellt eine Notiz mit einem beliebigen Text als Inhalt.
+- Der Benutzer löscht die erstellte Notiz wieder.
+- Der Benutzer erstellt mehrere Notizen und achtet darauf, ob es ein Limit für die Anzahl der erstellten Notizen gibt.
 - Der Benutzer loggt sich aus und möchte, nachdem er sich wieder eingeloggt hat, seine erstellten Notizen angucken. 
 
 
@@ -102,7 +103,7 @@ Szenario: Ein Benutzer ist bereits eingeloggt und befindet sich auf der Applicat
 Die Methode besteht darin, so vorzugehen, als wäre ich (Lasse, eigentlich die Rolle des Entwicklers) in der Rolle des Users mit Erfahrungswissen einer Person, die an einer Universität studiert und oft mit Webanwendungen in Kontakt kommt.
 
 ### Ergebnisse
-- Das Hinzufügen von Notizen ist simpel, denn der User benutzt das Textfeld, um seine Notiz zu schreiben. Danach drückt er auf den Knopf „Add a Note“ und schon ist die Notiz der Seite hinzugefügt. Diesen Vorgang kann der User auch n-Mal wiederholen. 
+- Das Hinzufügen von Notizen ist simpel, denn der User benutzt das Textfeld, um seine Notiz zu schreiben. Danach drückt er auf den Knopf „Add a Note“ und schon ist die Notiz der Seite hinzugefügt. Diesen Vorgang kann der User auch n Male wiederholen. 
 - Das Löschen der hinzugefügten Notiz funktioniert so, dass der User das Kreuz bei der erstellten Notiz drückt. Sobald er dies macht, wird die erstellte Notiz gelöscht. 
 - Der User kann eine neu hinzugefügte Notiz noch sehen, nachdem er sich ausgeloggt und erneut eingeloggt hat.
 

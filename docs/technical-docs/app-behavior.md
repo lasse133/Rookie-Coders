@@ -25,9 +25,9 @@ Lasse Schmidt und Isabel Kaspar
 
 ![Rookie Coders Mock Up](../assets/images/RookieCodersMockUp.png)
 
-### Link zu unserem Miro-Board
+### Link zu unserem Miro-Board für die visuelle Unterstützung
 
-https://miro.com/app/board/uXjVM-pFY7o=/?share_link_id=52814562512
+- https://miro.com/app/board/uXjVM-pFY7o=/?share_link_id=52814562512
 
 ### Detaillierte Erläuterung der Anwendung
 
@@ -42,10 +42,10 @@ Der Benutzer landet auf der Homepage. Von dort aus hat er die Möglichkeit, entw
 -	eine Notiz hinzufügen 
 -	eine Notiz löschen
 
-Für diese Funktionen haben wir folgende Regeln festgelegt: 
+Für all die oben erläuterten Funktionen haben wir folgende Regeln festgelegt: 
 
 Bei der Registrierung: 
--	seine eigene E-Mail benutzen, da das Benutzen der gleichen E-Mail für verschiedene Accounts nicht möglich ist. 
+-	Man muss seine eigene E-Mail benutzen, da das Benutzen der gleichen E-Mail für verschiedene Accounts nicht möglich ist. 
 -	Der Name muss länger als zwei Zeichen sein. 
 -	Die E-Mail muss länger als sieben Zeichen lang sein und ein @-Zeichen beinhalten. 
 -	Das Passwort muss länger als drei Zeichen lang sein. 

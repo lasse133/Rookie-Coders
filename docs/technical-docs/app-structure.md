@@ -27,7 +27,7 @@ Lasse Schmidt und Isabel Kaspar
 ![Rookie Coders Klassendiagramm](../assets/images/RookieCodersKlassendiagramm.png)
 
 ### Link zu Lucid Chart
-https://lucid.app/lucidchart/06b31ea1-8d28-4c47-92c7-21bac93f265a/edit?viewport_loc=141%2C2465%2C3044%2C1135%2C0_0&invitationId=inv_1b263f21-f592-4aff-b86a-d6a828bdaa6b
+- https://lucid.app/lucidchart/06b31ea1-8d28-4c47-92c7-21bac93f265a/edit?viewport_loc=141%2C2465%2C3044%2C1135%2C0_0&invitationId=inv_1b263f21-f592-4aff-b86a-d6a828bdaa6b
 
 Unser Klassendiagramm richtet sich nach der MVC-Struktur. Daran haben wir uns auch bei dem Programmieren unserer Anwendung gehalten. 
 

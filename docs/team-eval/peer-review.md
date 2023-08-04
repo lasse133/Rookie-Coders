@@ -45,4 +45,4 @@ Die Gruppenarbeit mit Isabel macht jedes mal Spaß und wir sind ein gutes Team. 
 
 ### Tip for the future (Wunsch)
 
-Ich denke, dass Isabel davon profitieren könnte, wenn sie sich selber nicht so viel Druck machen würde. Dadurch wäre die Gruppenarbeit dann perfekt. 
+Ich denke, dass Isabel davon profitieren könnte, wenn sie sich selbst nicht so viel Druck machen würde. Dadurch wäre die Gruppenarbeit dann perfekt. 

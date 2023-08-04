@@ -117,7 +117,7 @@ Browser shows: `Homepage`
 
 ---
 
-## Save Date Part 1 or 2 
+## Save Date Part 1 or Part 2 
 
 ### `save_date(page_name)`
 
@@ -133,7 +133,7 @@ Browser shows: `Homepage`
 
 ---
 
-## Delete Date Part 1 or 2 
+## Delete Date Part 1 or Part 2 
 
 ### `delete_date(page_name,date_id)`
 
@@ -149,7 +149,7 @@ Browser shows: `Application Part 1 or Part 2 without the date`
 
 ---
 
-## Add Note Part 1 or 2 
+## Add Note Part 1 or Part 2 
 
 ### `add_note(page_name)`
 
@@ -165,7 +165,7 @@ Browser shows: `Application Part 1 or Part 2 without the date`
 
 ---
 
-## Delete Note Part 1 or 2 
+## Delete Note Part 1 or Part 2 
 
 ### `delete_note(page_name)`
 
