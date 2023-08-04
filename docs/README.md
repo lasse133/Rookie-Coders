@@ -30,6 +30,8 @@ http://127.0.0.1:5000
 
 Bootstrap (2023). Build fast, responsive sites with Bootstrap. https://getbootstrap.com/ (zuletzt geprüft am 28.07.2023). 
 
+Eck, A. (2023). Full-Stack Web Dev @ HWR Berlin. HWR Berlin. https://hwrberlin.github.io/fswd/01-python-vscode.html#2-install-visual-studio-code-and-prepare-your-workspace (zuletzt geprüft am 04.08.2023).
+
 OpenAI (2023). An den gekennzeichneten Stellen wurde künstliche Intelligenz als Hilfsmittel für den Programmierprozess eingesetzt. OpenAI’s GPT-3 Modell. https://openai.com/
 
 patrickloeber (2020, 13. Dezember). flask-todo. GitHub. https://github.com/patrickloeber/flask-todo (zuletzt geprüft am 28.07.2023).
