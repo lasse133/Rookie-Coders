@@ -25,12 +25,7 @@ def create_app():
 
     with app.app_context():
         db.create_all()
-
-        tasks = Task.query.all()
-        for task in tasks:
-           db.session.delete(task)
-
-        db.session.commit()
+        # db.session.commit()
 
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'

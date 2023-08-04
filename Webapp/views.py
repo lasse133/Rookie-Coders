@@ -16,7 +16,7 @@ def infoPage():
     return render_template("infoPage.html")
 
 # Hilfe von OpenAI (2023)
-def addTask(title, description,page_name, user_id):
+def addTask(title, description, page_name, user_id):
              # Check if the task already exists in the database
             existing_task = Task.query.filter_by(title=title, description=description, page_name=page_name, user_id = user_id).first()
 
@@ -51,7 +51,7 @@ def ApplicationPart2():
     
     tasks = [
         {'title': 'Sixth Task', 'description': 'Insert Personal Data Part Two (See Documents for Details)', 'page_name' : 'Part2', 'user_id' : current_user.id},
-        {'title': 'Seventh Task', 'description': 'Provide Fincancial Sources', 'page_name' : 'Part2', 'user_id' : current_user.id},
+        {'title': 'Seventh Task', 'description': 'Provide Financial Sources', 'page_name' : 'Part2', 'user_id' : current_user.id},
         {'title': 'Eighth Task', 'description': 'Send off Second Part of the Application', 'page_name' : 'Part2', 'user_id' : current_user.id},
         {'title': 'Ninth Task', 'description': 'Arrange Appointment with Consulate', 'page_name' : 'Part2', 'user_id' : current_user.id},
         {'title': 'Tenth Task', 'description': 'Conclude Foreign Insurance', 'page_name' : 'Part2', 'user_id' : current_user.id},
@@ -77,7 +77,7 @@ def SubTaskPersonalData():
 def SubTaskAcademicRessources():
     tasks = [
         {'title': 'First Document', 'description': 'Transcripts', 'page_name' : 'AcademicRessources', 'user_id' : current_user.id},
-        {'title': 'Second Document', 'description': 'Perfomance Overview', 'page_name' : 'AcademicRessources', 'user_id' : current_user.id},
+        {'title': 'Second Document', 'description': 'Performance Overview', 'page_name' : 'AcademicRessources', 'user_id' : current_user.id},
         ]
     for task in tasks:
         addTask(task['title'], task['description'], task['page_name'], task['user_id'])
